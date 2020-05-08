@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>台南牛點餐價格表</title>
+    <style>
+        h1,
+        h2 {
+            font-weight: bolder;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: blue;
+        }
+        
+        h2 {
+            font-size: 28px;
+            color: red;
+        }
+        
+        table {
+            margin: auto;
+        }
+        #tableCaption {
+            border-style: dashed;
+            border-width: 1px;
+        }
+        td {
+            padding: 10px;
+            border-style: dotted;
+            border-width: 1px;
+            text-align: center;
+            border-color: red;
+            font-size: 18px;
+        }
+        
+        .content {
+            color: green;
+            font-family: Arial;
+            font-size: 18px;
+        }
+        .a{
+            border-style: none;
+        }
+        #tableTitle{
+            font-weight: bolder;
+            font-size: 18px;
+            border-color: purple;
+            color: purple;
+            text-align: center
+        }
+        .a3{
+            color: red;
+            font-family: Arial;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        var i=1,j;
+        document.write("<h1>台南牛點餐價格表</h1>");
+        document.write("<h2>折扣內容：1000元以上(含1000元)折 100</h2>");
+        document.write("<table border='1' id='tableCaption'>");
+            document.write("<thead>");
+                document.write("<tr>");
+                    document.write("<td class='a'>");
+                    document.write("</td>");
+                        for(j=50;j<=250;j+=50){
+                            document.write("<td id='tableTitle'>");
+                                document.write("套餐"+i+"<br>");
+                                document.write(j+"元");
+                            document.write("</td>");
+                            i++;
+                        }
+                document.write("</tr>");
+            document.write("</thead>");
+            document.write("<tbody>");
+                for(i=1;i<=7;i++){
+                    document.write("<tr>");
+                        document.write("<td id='tableTitle'>");
+                            document.write(i);
+                        document.write("</td>");
+                    for(j=50;j<=250;j+=50){
+                        if(i*j<1000){
+                            document.write("<td class='content'>");
+                                document.write(i*j);
+                            document.write("</td>");
+                        }
+                        else{
+                            document.write("<td class='a3'>");
+                                document.write("原價："+i*j+"<br>");
+                                document.write(i*j-100);
+                            document.write("</td>");
+                        }
+                        
+                    }
+                    document.write("</tr>");
+                }
+            document.write("</tbody>");
+        document.write("</table>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -37,12 +37,16 @@
                     $(this).toggleClass('current-active');
                 })
                 var bodyClass = document.body.classList,
-                    lastScrollY = 100;
+                    lastScrollY = 0;
                 window.addEventListener('scroll', function(){
                 var st = this.scrollY;
                 if( st < lastScrollY) {
                     bodyClass.remove('hideUp');
-                }else{
+                }
+                else if(lastScrollY==0){
+                    bodyClass.add('hideUp');
+                }
+                else{
                     bodyClass.add('hideUp');
                 }
                 lastScrollY = st;

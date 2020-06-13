@@ -90,7 +90,6 @@ main img{
         padding: 10px 25px;
         margin-top: -5px;
         border-radius: 0px 0px 3px 3px;
-
     }
     .menu li {
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
@@ -101,5 +100,14 @@ main img{
     .menu a {
         display: block;
     }
-    
+}
+@media screen and (max-width: 768px){
+    main img{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 420px){
+    main img{
+        height: 200px;
+    }
 }

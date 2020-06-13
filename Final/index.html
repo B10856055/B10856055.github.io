@@ -39,6 +39,7 @@
                 var bodyClass = document.body.classList,
                     lastScrollY = 100;
                 window.addEventListener('scroll', function(){
+                    
                 var st = this.scrollY;
                 if( st < lastScrollY) {
                     bodyClass.remove('hideUp');
@@ -46,7 +47,7 @@
                 else if(st==100){
                     bodyClass.remove('hideUp');
                 }
-                else if(st>80){
+                else if(st>100){
                     bodyClass.add('hideUp');
                 }
                 lastScrollY = st;

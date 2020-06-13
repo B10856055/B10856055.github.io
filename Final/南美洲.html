@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <nav class="menu" id="menu">
+            <a id="menubtn" class="toggle-nav" href="#">☰</a>
+            <div class="menu-logo"><a href="index.html">動物</a></div>
+            <ul id="menuUl" class="active">
+                <li id="a1"><a href="北美洲.html">北美洲</a></li>
+                <li id="a2"><a href="南美洲.html">南美洲</a></li>
+                <li id="a3"><a href="歐洲.html">歐洲</a></li>
+                <li id="a4"><a href="非洲.html">非洲</a></li>
+                <li id="a5"><a href="亞洲.html">亞洲</a></li>
+                <li id="a6"><a href="大洋洲.html">大洋洲</a></li>
+                <li id="a7"><a href="南極洲.html">南極洲</a></li>
+                <li id="a8"><a href="海洋.html">海洋</a></li>
+            </ul>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script>
+                document.getElementById('menubtn').addEventListener('click', function (e) {
+                    $('#menuUl').toggleClass('active');
+                })
+    
+                $('#menuUl li').click(function () {
+                    $(this).parent().find('li').each(function () {
+                        if ($(this).hasClass('current-active')) {
+                            $(this).toggleClass('current-active');
+                        }
+                    })
+                    $(this).toggleClass('current-active');
+                })
+                var bodyClass = document.body.classList,
+                    lastScrollY = 0;
+                window.addEventListener('scroll', function(){
+                var st = this.scrollY;
+                if( st < lastScrollY) {
+                    bodyClass.remove('hideUp');
+                }else{
+                    bodyClass.add('hideUp');
+                }
+                lastScrollY = st;
+                });
+            </script>
+        </nav>   
+    </header>
+    <a href="#top"><img class="fix" src="https://www.propowffer.com/wp-content/uploads/2018/06/go-to-the-top.png"></a>
+    <main>
+        <a>南美洲????</a>
+        <br><img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt="">
+        <a>海洋</a>
+        <br><img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt="">
+        <a>海洋</a>
+        <br><img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt="">
+        <a>海洋</a>
+        <br><img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt="">
+    </main>
+</body>
+</html>

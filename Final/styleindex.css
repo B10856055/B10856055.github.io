@@ -2,6 +2,7 @@
     position:fixed;
     right: 350px;
     top: 200px;
+    z-index: -1;
 }
 #北美洲{
     position:fixed;
@@ -45,6 +46,7 @@
 }
 main a img{
     height: 50px;
+    z-index: -1;
 }
 a img:hover{
     filter:invert(80%)

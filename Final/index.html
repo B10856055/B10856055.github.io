@@ -72,17 +72,17 @@
         <a href="海洋.html"><img src="海洋.png" alt="" id="海洋"></a>
         <script>
             var mainClass = document.main.classList,
-                lastScrollY = 100;
+                lastScrollY = 0;
             window.addEventListener('scroll', function(){
                     
             var st = this.scrollY;
             if( st < lastScrollY) {
                 mainClass.remove('hideUp2');
             }
-            else if(st==100){
+            else if(st==1){
                 mainClass.remove('hideUp2');
             }
-            else if(st>100){
+            else if(st>1){
                 mainClass.add('hideUp2');
             }
             lastScrollY = st;

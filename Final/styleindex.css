@@ -3,6 +3,9 @@
     right: 350px;
     top: 200px;
 }
+.hideUp2 a img{
+    top: -80px;
+}
 #北美洲{
     position:fixed;
     right: 1200px;

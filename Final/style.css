@@ -69,14 +69,14 @@ main img{
     border-radius: 25%;
     background-color: cornsilk;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1185px) {
     .menu {
         position: relative;
         display: inline-block;
     }
     .toggle-nav {
         position: absolute;
-        top: 7px;
+        top: 15px;
         right: 4%;
         color: #ffffff;
         text-decoration: none;

@@ -53,6 +53,7 @@ a img:hover{
 }
 h1{
     font-family: '微軟正黑體';
+    background-color: white;
 }
 @media screen and (max-width: 1580px){
     #world{

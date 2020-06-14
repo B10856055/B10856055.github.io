@@ -3,9 +3,6 @@
     right: 350px;
     top: 200px;
 }
-.hideUp2 a img{
-    top: -80px;
-}
 #北美洲{
     position:fixed;
     right: 1200px;
@@ -55,9 +52,11 @@ a img:hover{
 h1{
     font-family: '微軟正黑體';
 }
-@media screen and (max-width: 1570px){
+@media screen and (max-width: 1580px){
     #world{
-        position: unset;
+        top: 220px;
+        left: 5px;
+        right: unset;
     }
     #北美洲{
         position:fixed;
@@ -104,6 +103,9 @@ h1{
     main img{
         height: 400px;
     }
+    #world{
+        top: 230px;
+    }
     #北美洲{
         position:fixed;
         left: 90px;
@@ -146,6 +148,9 @@ h1{
     }
 }
 @media screen and (max-width:984px){
+    #world{
+        top: 280px;
+    }
     #北美洲{
         position:fixed;
         left: 90px;
@@ -236,6 +241,9 @@ h1{
     }
 }
 @media screen and (max-width:655px){
+    #world{
+        top: 315px;
+    }
     #北美洲{
         position:fixed;
         left: 50px;
@@ -278,6 +286,9 @@ h1{
     }
 }
 @media screen and (max-width:504px){
+    #world{
+        top: 355px;
+    }
     #北美洲{
         position:fixed;
         left: 50px;
@@ -320,6 +331,9 @@ h1{
     }
 }
 @media screen and (max-width:408px){
+    #world{
+        top: 400px;
+    }
     #北美洲{
         position:fixed;
         left: 50px;
@@ -362,6 +376,9 @@ h1{
     }
 }
 @media screen and (max-width:335px){
+    #world{
+        top: 440px;
+    }
     #北美洲{
         position:fixed;
         left: 50px;
@@ -401,5 +418,50 @@ h1{
         position:fixed;
         left: 100px;
         top: 490px;
+    }
+}
+@media screen and (max-width:300px){
+    #world{
+        position: unset;
+    }
+    #北美洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #南美洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #歐洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #非洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #亞洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #大洋洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #南極洲{
+        position:fixed;
+        left: 0px;
+        top: -50px;
+    }
+    #海洋{
+        position:fixed;
+        left: 0px;
+        top: -50px;
     }
 }

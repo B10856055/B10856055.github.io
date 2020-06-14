@@ -46,7 +46,6 @@
 }
 main a img{
     height: 50px;
-    z-index: -1;
 }
 a img:hover{
     filter:invert(80%)
@@ -54,6 +53,9 @@ a img:hover{
 h1{
     font-family: '微軟正黑體';
     background-color: white;
+}
+.text a img{
+    z-index: -1;
 }
 @media screen and (max-width: 1580px){
     #world{

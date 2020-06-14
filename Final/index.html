@@ -28,7 +28,6 @@
                 document.getElementById('menubtn').addEventListener('click', function (e) {
                     $('#menuUl').toggleClass('active');
                 })
-
                 $('#menuUl li').click(function () {
                     $(this).parent().find('li').each(function () {
                         if ($(this).hasClass('current-active')) {
@@ -57,7 +56,7 @@
         </nav>   
     </header>
     <a href="#top"><img class="fix" src="https://www.propowffer.com/wp-content/uploads/2018/06/go-to-the-top.png"></a>
-    <main>
+    <main id="text">
         <h1>本網站主要在介紹地球上最具代表性的動物，
             將地球劃分為北美洲、南美洲、歐洲、非洲、
             亞洲、大洋洲、南極洲及海洋來分別介紹。</h1>
@@ -70,6 +69,11 @@
         <a href="大洋洲.html"><img src="大洋洲.png" alt="" id="大洋洲"></a>
         <a href="南極洲.html"><img src="南極洲.png" alt="" id="南極洲"></a>
         <a href="海洋.html"><img src="海洋.png" alt="" id="海洋"></a>
+        <script>
+            document.getElementById('menubtn').addEventListener('click', function (e) {
+                $('#text').toggleClass('text');
+            })
+        </script>
     </main>
     <footer>
     </footer>

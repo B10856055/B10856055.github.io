@@ -333,46 +333,47 @@ h1{
 @media screen and (max-width:408px){
     #world{
         top: 400px;
+        height: 150px;
     }
     #北美洲{
         position:fixed;
-        left: 50px;
-        top: 430px;
+        left: 25px;
+        top: 420px;
     }
     #南美洲{
         position:fixed;
-        left: 85px;
-        top: 500px;
+        left: 50px;
+        top: 470px;
     }
     #歐洲{
         position:fixed;
-        left: 180px;
-        top: 420px;
+        left: 120px;
+        top: 415px;
     }
     #非洲{
         position:fixed;
-        left: 170px;
-        top: 470px;
+        left: 110px;
+        top: 450px;
     }
     #亞洲{
         position:fixed;
-        left: 245px;
-        top: 435px;
+        left: 170px;
+        top: 425px;
     }
     #大洋洲{
         position:fixed;
-        left: 295px;
-        top: 520px;
+        left: 205px;
+        top: 490px;
     }
     #南極洲{
         position:fixed;
-        left: 170px;
-        top: 580px;
+        left: 110px;
+        top: 530px;
     }
     #海洋{
         position:fixed;
-        left: 100px;
-        top: 450px;
+        left: 65px;
+        top: 440px;
     }
 }
 @media screen and (max-width:335px){
@@ -381,43 +382,43 @@ h1{
     }
     #北美洲{
         position:fixed;
-        left: 50px;
-        top: 470px;
+        left: 25px;
+        top: 460px;
     }
     #南美洲{
         position:fixed;
-        left: 85px;
-        top: 540px;
+        left: 50px;
+        top: 510px;
     }
     #歐洲{
         position:fixed;
-        left: 180px;
-        top: 460px;
+        left: 120px;
+        top: 455px;
     }
     #非洲{
         position:fixed;
-        left: 170px;
-        top: 510px;
+        left: 110px;
+        top: 490px;
     }
     #亞洲{
         position:fixed;
-        left: 245px;
-        top: 475px;
+        left: 170px;
+        top: 465px;
     }
     #大洋洲{
         position:fixed;
-        left: 295px;
-        top: 560px;
+        left: 205px;
+        top: 530px;
     }
     #南極洲{
         position:fixed;
-        left: 170px;
-        top: 620px;
+        left: 110px;
+        top: 570px;
     }
     #海洋{
         position:fixed;
-        left: 100px;
-        top: 490px;
+        left: 65px;
+        top: 480px;
     }
 }
 @media screen and (max-width:300px){

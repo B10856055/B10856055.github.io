@@ -61,7 +61,7 @@ h1{
 .text a img{
     z-index: -1;
 }
-.text doc{
+.text div{
     z-index: 2;
 }
 @media screen and (max-width: 1580px){

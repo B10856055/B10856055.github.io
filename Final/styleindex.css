@@ -60,7 +60,7 @@ h1{
     background-color: white;
 }
 main div{
-    z-index: 2;
+    z-index: 99;
 }
 @media screen and (max-width: 1580px){
     #world{

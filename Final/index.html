@@ -29,10 +29,10 @@
                 document.getElementById('menubtn').addEventListener('click', function (e) {
                     $('#menuUl').toggleClass('active');
                 })
+                
                 var bodyClass = document.body.classList,
                     lastScrollY = 100;
                 window.addEventListener('scroll', function(){
-                    
                 var st = this.scrollY;
                 if( st < lastScrollY) {
                     bodyClass.remove('hideUp');

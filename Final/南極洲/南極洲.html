@@ -28,13 +28,18 @@
                 document.getElementById('menubtn').addEventListener('click', function (e) {
                     $('#menuUl').toggleClass('active');
                 })
+                
                 var bodyClass = document.body.classList,
-                    lastScrollY = 0;
+                    lastScrollY = 100;
                 window.addEventListener('scroll', function(){
                 var st = this.scrollY;
                 if( st < lastScrollY) {
                     bodyClass.remove('hideUp');
-                }else{
+                }
+                else if(st==100){
+                    bodyClass.remove('hideUp');
+                }
+                else if(st>100){
                     bodyClass.add('hideUp');
                 }
                 lastScrollY = st;

@@ -12,6 +12,7 @@ header{
     width: 100%;
     box-sizing: border-box;
     transition: top 0.4s ease-in-out;
+    z-index: 3;
 }
 .hideUp header{
     top: -80px;
@@ -28,6 +29,7 @@ main {
     list-style: none;
     margin: 0px 50px 0px 0px;
     font-size: 30px;
+    z-index: 1;
 }
 .menu li a {
     text-decoration: none;
@@ -55,7 +57,7 @@ main {
     font-size: 30px;
 }
 main img{
-    height: 600px;
+    width: 500px;
 }
 .menu-logo img{
     height: 50px;
@@ -68,8 +70,9 @@ main img{
     right:30px;
     border-radius: 25%;
     background-color: cornsilk;
+    opacity: 0.5;
 }
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 1300px) {
     .menu {
         position: relative;
         display: inline-block;

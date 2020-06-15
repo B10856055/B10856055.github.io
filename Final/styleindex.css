@@ -44,6 +44,10 @@
     right: 1000px;
     top: 350px;
 }
+main img{
+    width: unset;
+    height: 600px;
+}
 main a img{
     height: 50px;
 }

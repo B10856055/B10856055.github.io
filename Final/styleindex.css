@@ -62,6 +62,7 @@ h1{
 footer a{
     position: fixed;
     bottom : 0px;
+<<<<<<< HEAD
     left : 0x;
 }
 footer #a1{
@@ -76,6 +77,11 @@ footer #a2{
     main img{
         height: 400px;
     }
+=======
+    left : 0px;
+}
+@media screen and (max-width: 1580px){
+>>>>>>> 8dacb301875b3821060e8e71f9132d3de93e8476
     #world{
         right: unset;
         top: 280px;

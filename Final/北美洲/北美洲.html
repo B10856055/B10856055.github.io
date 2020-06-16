@@ -5,195 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>動物</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-            Table{
-                border-spacing: 0px;
-                display:table;
-                width: 100%;
-                border-collapse: separate;
-                margin-top: 30px;
-                font-family: '微軟正黑體';
-            }
-            .is1{
-                text-align: center;
-                font-size: 30px;
-                width: 300px;
-            }
-            .is2{
-                font-size: 20px;
-            }
-            .is3{
-                width: 0px;
-            }
-            #is2{
-                text-align: center;
-                vertical-align: middle;
-            }
-            td{
-                vertical-align: top;
-            }
-            td img{
-                width: 500px;
-            }
-            .table1{
-                border:2px solid rgb(206, 105, 92);
-                margin-top: 70px;
-            }
-            .table1 .is1{
-                background-color: rgb(240, 124, 109);
-            }
-            .table2{
-                border:2px solid rgb(122, 190, 122);
-            }
-            .table2 .is1{
-                background-color: rgb(157, 238, 157);
-            }
-            .table3{
-                border:2px solid rgb(83, 165, 219);
-            }
-            .table3 .is1{
-                background-color: rgb(92, 188, 252);
-            }
-
-            main ul {
-                margin:0;
-                padding: 0;
-                list-style: none;
-                position: absolute;
-                left: 50%;
-                margin-left: -230px;
-            }
-            .menu2{
-                margin-top: 10px;
-            }
-            ul.menu2 {
-                border: #ccc 1px solid;
-                display: inline-block;
-                font-family: '微軟正黑體';
-                font-size: 30px;
-                font-weight: bolder;
-            }
-            ul.menu2 li {
-                position: relative;
-                white-space: nowrap;
-                border-right: #ccc 1px solid;
-            }
-            ul.menu2 > li:last-child {
-                border-right: none;
-            }
-            ul.menu2 > li {
-                float: left;
-            }
-            ul.menu2 a {
-                background-color: #fff;
-                color: #333;
-                display: block;
-                padding: 0 30px;
-                text-decoration: none;
-                line-height: 40px;
-            }
-            ul.menu2.animal1:hover {
-                background-color: rgb(240, 124, 109);
-                color: #fff;
-            }
-            ul.menu2 li:hover > a.animal1 {
-                background-color: rgb(240, 124, 109);
-                color: #fff;
-            }
-            ul.menu2.animal2:hover {
-                background-color: rgb(157, 238, 157);
-                color: #fff;
-            }
-            ul.menu2 li:hover > a.animal2 {
-                background-color: rgb(157, 238, 157);
-                color: #fff;
-            }
-            ul.menu2.animal3:hover {
-                background-color: rgb(92, 188, 252);
-                color: #fff;
-            }
-            ul.menu2 li:hover > a.animal3 {
-                background-color: rgb(92, 188, 252);
-                color: #fff;
-            }
-            ul.menu2 ul {
-                border: #ccc 1px solid;
-                position: absolute;
-                left: 229px;
-                top: 100%;
-                min-width: 150px;
-            }
-            ul.menu2 ul li {
-                border-bottom: #ccc 1px solid;
-            }
-            ul.menu2 ul li:last-child {
-                border-bottom: none;
-            }
-            ul.menu2 ul {
-                display: none;
-            }
-            ul.menu2 li:hover > ul {
-                display: block;
-            }
-            @media screen and (max-width:1411px){
-                .is1{
-                    width: 250px;
-                }
-                .is3{
-                    width: 450px;
-                }
-                td img{
-                    width: 450px;
-                }
-            }
-            @media screen and (max-width:1311px){
-                .is1{
-                    width: 200px;
-                }
-                .is3{
-                    width: 400px;
-                }
-                td img{
-                    width: 400px;
-                }
-            }
-            @media screen and (max-width:1211px){
-                .is1{
-                    width: 150px;
-                }
-                .is3{
-                    width: 350px;
-                }
-                td img{
-                    width: 350px;
-                }
-            }
-            @media screen and (max-width:486px){
-                .table1{
-                    border:2px solid rgb(206, 105, 92);
-                    margin-top: 30px;
-                }
-                main ul {
-                    margin:0;
-                    padding: 0;
-                    position: unset;
-                }
-                ul.menu2 > li {
-                    float: unset;
-                }
-                ul.menu2 li{
-                    border-bottom: #ccc 1px solid;
-                }
-                ul.menu2 ul {
-                    border: #ccc 1px solid;
-                    position: absolute;
-                    left: 229px;
-                    top: 10px;
-                    left: 90%;
-                    z-index: 2;
-                }
-            }
-    </style>
+    <link rel="stylesheet" href="../style2.css">
 </head>
 <body>
     <div id="top"></div>
@@ -269,8 +81,15 @@
                 <th class="is1">動物名稱</th>
                 <td class="is2" id="is2">貓咪</td>
                 <script>
+                    var x=0,y;
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width() < 1024) {                            
+                        if(($(window).width() <= 350)){
+                            document.write('<td align="center" class="is3">')
+                        }
+                        else if(($(window).width() <= 786)){
+                            document.write('<td rowspan="2" align="center" class="is3">'); 
+                        }
+                        else if (768 < $(window).width()&&$(window).width() <= 1024) {                            
                             document.write('<td rowspan="3" align="center" class="is3">');  
                         }
                         else {
@@ -279,30 +98,58 @@
                     };
                     windowSize();
                     $(window).resize (function() {
-                        if (924 < $(window).width()&&$(window).width() < 1124) {                            
+                        if (321 < $(window).width()&&$(window).width() < 374) {                            
                             window.location.href='';
                         }
-                    });
+                        if (700 < $(window).width()&&$(window).width() < 786) {                            
+                            window.location.href='';
+                        }
+                        if (924 < $(window).width()&&$(window).width() < 1124) {                            
+                            window.location.href='';
+                        }                      
+                    });                  
                 </script>
                 <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
             </tr>
             <tr>
-                <th class="is1">分類</th>
-                <td class="is2" id="is2">哺乳類</td>
+                <th class="is1">分類</th>               
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 350)) {
+                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
+                        }
+                        else {
+                            document.write('<td class="is2" id="is2">哺乳類');                  
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">分布</th>
-                <td class="is2">家中家中家中家中家中家中</td>
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 786)) {
+                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
+                        }
+                        else {
+                            document.write('<td class="is2">家中家中家中家中家中家中');                          
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">簡介</th>
                 <script>
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width()&&$(window).width() < 1024) {
-                            document.write('<td colspan="2 class="is3">');  
+                        if ($(window).width() > 1024) {
+                            document.write('<td class="is3">'); 
                         }
                         else {
-                            document.write('<td class="is3">');                          
+                            document.write('<td colspan="2" class="is3">');                            
                         }
                     };
                     windowSize();
@@ -318,7 +165,13 @@
                 <td class="is2" id="is2">老虎</td>
                 <script>
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width() < 1024) {
+                        if(($(window).width() <= 350)){
+                            document.write('<td align="center" class="is3">')
+                        }
+                        else if(($(window).width() <= 786)){
+                            document.write('<td rowspan="2" align="center" class="is3">'); 
+                        }
+                        else if (768 < $(window).width()&&$(window).width() <= 1024) {                            
                             document.write('<td rowspan="3" align="center" class="is3">');  
                         }
                         else {
@@ -331,21 +184,43 @@
             </tr>
             <tr>
                 <th class="is1">分類</th>
-                <td class="is2" id="is2">哺乳類</td>
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 350)) {
+                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
+                        }
+                        else {
+                            document.write('<td class="is2" id="is2">哺乳類');                  
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">分布</th>
-                <td class="is2">家中家中家中家中家中家中</td>
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 786)) {
+                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
+                        }
+                        else {
+                            document.write('<td class="is2">家中家中家中家中家中家中');                          
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">簡介</th>
                 <script>
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width() < 1024) {
-                            document.write('<td colspan="2 class="is3">');  
+                        if ($(window).width() > 1024) {
+                            document.write('<td class="is3">'); 
                         }
                         else {
-                            document.write('<td class="is3">');                          
+                            document.write('<td colspan="2" class="is3">');                            
                         }
                     };
                     windowSize();
@@ -361,7 +236,13 @@
                 <td class="is2" id="is2">老虎</td>
                 <script>
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width() < 1024) {
+                        if(($(window).width() <= 350)){
+                            document.write('<td align="center" class="is3">')
+                        }
+                        else if(($(window).width() <= 786)){
+                            document.write('<td rowspan="2" align="center" class="is3">'); 
+                        }
+                        else if (768 < $(window).width()&&$(window).width() <= 1024) {                            
                             document.write('<td rowspan="3" align="center" class="is3">');  
                         }
                         else {
@@ -374,21 +255,43 @@
             </tr>
             <tr>
                 <th class="is1">分類</th>
-                <td class="is2" id="is2">哺乳類</td>
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 350)) {
+                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
+                        }
+                        else {
+                            document.write('<td class="is2" id="is2">哺乳類');                  
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">分布</th>
-                <td class="is2">家中家中家中家中家中家中</td>
+                <script>
+                    function windowSize() {
+                        if (($(window).width() <= 786)) {
+                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
+                        }
+                        else {
+                            document.write('<td class="is2">家中家中家中家中家中家中');                          
+                        }
+                    };
+                    windowSize();
+                </script>
+                </td>
             </tr>
             <tr>
                 <th class="is1">簡介</th>
                 <script>
                     function windowSize() {
-                        if (768 < $(window).width()&&$(window).width() < 1024) {
-                            document.write('<td colspan="2 class="is3">');  
+                        if ($(window).width() > 1024) {
+                            document.write('<td class="is3">'); 
                         }
                         else {
-                            document.write('<td class="is3">');                          
+                            document.write('<td colspan="2" class="is3">');                            
                         }
                     };
                     windowSize();

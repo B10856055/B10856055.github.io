@@ -1,0 +1,175 @@
+Table{
+    border-spacing: 0px;
+    display:table;
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 30px;
+    font-family: '微軟正黑體';
+}
+.is1{
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+}
+.is2{
+    font-size: 20px;
+}
+.is3{
+    width: 0px;
+}
+#is2{
+    text-align: center;
+    vertical-align: middle;
+}
+td{
+    vertical-align: top;
+}
+td img{
+    width: 500px;
+}
+.table1{
+    border:2px solid rgb(206, 105, 92);
+    margin-top: 70px;
+}
+.table1 .is1{
+    background-color: rgb(240, 124, 109);
+}
+.table2{
+    border:2px solid rgb(122, 190, 122);
+}
+.table2 .is1{
+    background-color: rgb(157, 238, 157);
+}
+.table3{
+    border:2px solid rgb(83, 165, 219);
+}
+.table3 .is1{
+    background-color: rgb(92, 188, 252);
+}
+
+main ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -230px;
+}
+.menu2{
+    margin-top: 10px;
+}
+ul.menu2 {
+    border: #ccc 1px solid;
+    display: inline-block;
+    font-family: '微軟正黑體';
+    font-size: 30px;
+    font-weight: bolder;
+}
+ul.menu2 li {
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+ul.menu2 > li:last-child {
+    border-right: none;
+}
+ul.menu2 > li {
+    float: left;
+}
+ul.menu2 a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ul.menu2.animal1:hover {
+    background-color: rgb(240, 124, 109);
+    color: #fff;
+}
+ul.menu2 li:hover > a.animal1 {
+    background-color: rgb(240, 124, 109);
+    color: #fff;
+}
+ul.menu2.animal2:hover {
+    background-color: rgb(157, 238, 157);
+    color: #fff;
+}
+ul.menu2 li:hover > a.animal2 {
+    background-color: rgb(157, 238, 157);
+    color: #fff;
+}
+ul.menu2.animal3:hover {
+    background-color: rgb(92, 188, 252);
+    color: #fff;
+}
+ul.menu2 li:hover > a.animal3 {
+    background-color: rgb(92, 188, 252);
+    color: #fff;
+}
+ul.menu2 ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    left: 229px;
+    top: 100%;
+    min-width: 150px;
+}
+ul.menu2 ul li {
+    border-bottom: #ccc 1px solid;
+}
+ul.menu2 ul li:last-child {
+    border-bottom: none;
+}
+ul.menu2 ul {
+    display: none;
+}
+ul.menu2 li:hover > ul {
+    display: block;
+}
+@media screen and (max-width:1411px){
+    td img{
+        width: 400px;
+    }
+}
+@media screen and (max-width:1311px){
+    td img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:1024px){
+    td img{
+        width: 200px;
+    }
+}
+@media screen and (max-width:786px){
+    td img{
+        height: unset;
+        width: 200px;
+    }
+}
+@media screen and (max-width:486px){
+    .table1{
+        border:2px solid rgb(206, 105, 92);
+        margin-top: 30px;
+    }
+    main ul {
+        margin:0;
+        padding: 0;
+        position: unset;
+    }
+    ul.menu2 > li {
+        float: unset;
+    }
+    ul.menu2 li{
+        border-bottom: #ccc 1px solid;
+    }
+    ul.menu2 ul {
+        border: #ccc 1px solid;
+        position: absolute;
+        left: 229px;
+        top: 10px;
+        left: 90%;
+        z-index: 2;
+    }
+}

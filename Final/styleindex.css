@@ -60,7 +60,9 @@ h1{
     background-color: white;
 }
 footer a{
-    text-align:bottom;
+    position: fixed;
+    bottom : 0px;
+    left : 0px;
 }
 @media screen and (max-width: 1580px){
     #world{

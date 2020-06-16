@@ -59,6 +59,9 @@ h1{
     font-family: '微軟正黑體';
     background-color: white;
 }
+footer a{
+    text-align:bottom;
+}
 @media screen and (max-width: 1580px){
     #world{
         top: 220px;

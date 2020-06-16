@@ -27,6 +27,9 @@ td{
 td img{
     width: 500px;
 }
+img #image{
+    width: 500px;
+}
 .table1{
     border:2px solid rgb(206, 105, 92);
     margin-top: 70px;
@@ -131,9 +134,15 @@ ul.menu2 li:hover > ul {
     td img{
         width: 400px;
     }
+    img #image{
+        width: 400px;
+    }
 }
 @media screen and (max-width:1311px){
     td img{
+        width: 300px;
+    }
+    img #image{
         width: 300px;
     }
 }
@@ -141,9 +150,16 @@ ul.menu2 li:hover > ul {
     td img{
         width: 200px;
     }
+    img #image{
+        width: 200px;
+    }
 }
 @media screen and (max-width:786px){
     td img{
+        height: unset;
+        width: 200px;
+    }
+    img #image{
         height: unset;
         width: 200px;
     }

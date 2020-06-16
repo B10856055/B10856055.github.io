@@ -101,8 +101,10 @@
                         if (321 < $(window).width()&&$(window).width() < 374) {                            
                             window.location.href='';
                         }
-                        if (700 < $(window).width()&&$(window).width() < 786 &&$(window).width() ！=812） {                            
-                            window.location.href='';
+                        if (700 < $(window).width()&&$(window).width() < 786） { 
+                            if($(window).width()！=812) {
+                                window.location.href='';
+                            }
                         }
                         if (924 < $(window).width()&&$(window).width() < 1124) {                            
                             window.location.href='';

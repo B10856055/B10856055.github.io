@@ -77,6 +77,41 @@
             </li>
         </ul>
         <table border="1" class="table1" id="top1" style="OVERFLOW: auto; HEIGHT: 200px">
+
+<tr>
+                <th class="is1">動物名稱</th>
+                <td class="is2" id="is2">老虎</td>
+                <script>
+                    function windowSize() {
+                        if(($(window).width() <= 350)){
+                            document.write('<td align="center" class="is3">')
+                        }
+                        else if(($(window).width() <= 786)){
+                            document.write('<td rowspan="2" align="center" class="is3">'); 
+                        }
+                        else if (768 < $(window).width()&&$(window).width() <= 1024) {                            
+                            document.write('<td rowspan="3" align="center" class="is3">');  
+                        }
+                        else {
+                            document.write('<td rowspan="4" align="center" class="is3">');                          
+                        }
+                    };
+                    windowSize(); 
+                    $(window).resize (function() {
+                        if (321 < $(window).width()&&$(window).width() < 374) {                            
+                           window.location.href='';
+                        }
+                        else if (700 < $(window).width()&&$(window).width() < 786） { 
+                           window.location.href='';
+                        }
+                        else if (924 < $(window).width()&&$(window).width() < 1124) {                                                
+                           window.location.href='';              
+                        }                      
+                    });
+                </script>
+                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
+            </tr>
+
             <tr>
                 <th class="is1">動物名稱</th>
                 <td class="is2" id="is2">貓咪</td>
@@ -97,17 +132,7 @@
                         }
                     };
                     windowSize();
-                    $(window).resize (function() {
-                        if (321 < $(window).width()&&$(window).width() < 374) {                            
-                           window.location.href='';
-                        }
-                        else if (700 < $(window).width()&&$(window).width() < 786） { 
-                           window.location.href='';
-                        }
-                        else if (924 < $(window).width()&&$(window).width() < 1124) {                                                
-                           window.location.href='';              
-                        }                      
-                    });                  
+                   ;                  
                 </script>
                 <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
             </tr>

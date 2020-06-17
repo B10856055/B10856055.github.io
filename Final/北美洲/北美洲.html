@@ -99,8 +99,12 @@
                 <img src="https://images.chinatimes.com/newsphoto/2019-07-16/900/20190716002855.jpg" alt="" id="ptr"></td>
             </tr>
                 <script>
-                    $(window).resize ( 
+                    $(window).resize (
                         function() {
+                        var isFullScreen = document.fullscreen || document.mozFullScreen || document.webkitIsFullScreen;
+                        if(isFullScreen=true){
+                            window.location.href='';
+                        }
                         if (321 < $(window).width()&&$(window).width() < 374) {                            
                             window.location.href='';
                         }

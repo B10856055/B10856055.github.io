@@ -101,6 +101,10 @@
                <script>
                     $(window).resize ( 
                         function() {
+                        var isFullScreen = document.fullscreen || document.mozFullScreen || document.webkitIsFullScreen;
+                        if(isFullScreen=true){
+                            window.location.href='';
+                        }   
                         if (321 < $(window).width()&&$(window).width() < 374) {                            
                             window.location.href='';
                         }

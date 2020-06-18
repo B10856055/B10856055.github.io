@@ -101,12 +101,12 @@
                 $(window).resize(function(){
                     if($(window).scroll()){
                         var t = document.documentElement.scrollTop||document.body.scrollTop;
-                        if(t < 10){
+                        if(t < 1){
                             if(window.innerWidth==5120||window.innerWidth==3840||window.innerWidth==3000||window.innerWidth==2960||window.innerWidth==2880||window.innerWidth==2560||window.innerWidth==2048||window.innerWidth==2304||window.innerWidth==1920||window.innerWidth==1440||window.innerWidth==1366||window.innerWidth==1280||window.innerWidth==1080||window.innerWidth==1024||window.innerWidth==960||window.innerWidth==800||window.innerWidth==768||window.innerWidth==750||window.innerWidth==720||window.innerWidth==640||window.innerWidth==540||window.innerWidth==480||window.innerWidth==414||window.innerWidth==411||window.innerWidth==375||window.innerWidth==360||window.innerWidth==320){
                                 window.location.href='';
                             }
                         }
-                        else if(t>100){
+                        else if(t>$(window).height()){
                             document.body.scrollTop = 0;
                             document.documentElement.scrollTop = 0;
                         }
@@ -133,10 +133,10 @@
                 <script>
                     function windowSize() {
                         if (($(window).width() <= 768)) {
-                            document.write('<td colspan="2" class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。。');  
+                            document.write('<td colspan="2" class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。');  
                         }
                         else {
-                            document.write('<td class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。。');                          
+                            document.write('<td class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。');                          
                         }
                     };
                     windowSize();

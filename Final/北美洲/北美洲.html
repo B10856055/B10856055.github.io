@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
     <title>動物</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style2.css">
@@ -80,7 +79,6 @@
                 <th class="is1">動物名稱</th>
                 <td class="is2" id="is2">美洲豹</td>
                 <script>
-                    var x=0,y;
                     function windowSize() {
                         if(($(window).width() <= 350)){
                             document.write('<td align="center" class="is3">')
@@ -98,12 +96,16 @@
                     windowSize();                  
                 </script>
                 <img src="https://images.chinatimes.com/newsphoto/2019-07-16/900/20190716002855.jpg" alt=""></td>
-                
             </tr>
             <script>
                 $(window).resize(function(){
-                    if(window.innerWidth==5120||window.innerWidth==3840||window.innerWidth==3000||window.innerWidth==2960||window.innerWidth==2880||window.innerWidth==2560||window.innerWidth==2048||window.innerWidth==2304||window.innerWidth==1920||window.innerWidth==1440||window.innerWidth==1366||window.innerWidth==1280||window.innerWidth==1080||window.innerWidth==1024||window.innerWidth==960||window.innerWidth==800||window.innerWidth==768||window.innerWidth==750||window.innerWidth==720||window.innerWidth==640||window.innerWidth==540||window.innerWidth==480||window.innerWidth==414||window.innerWidth==411||window.innerWidth==375||window.innerWidth==360||window.innerWidth==320){
-                        window.location.href='';
+                    if($(window).scroll()){
+                        var t = document.documentElement.scrollTop||document.body.scrollTop;
+                        if(t < 100){
+                            if(window.innerWidth==5120||window.innerWidth==3840||window.innerWidth==3000||window.innerWidth==2960||window.innerWidth==2880||window.innerWidth==2560||window.innerWidth==2048||window.innerWidth==2304||window.innerWidth==1920||window.innerWidth==1440||window.innerWidth==1366||window.innerWidth==1280||window.innerWidth==1080||window.innerWidth==1024||window.innerWidth==960||window.innerWidth==800||window.innerWidth==768||window.innerWidth==750||window.innerWidth==720||window.innerWidth==640||window.innerWidth==540||window.innerWidth==480||window.innerWidth==414||window.innerWidth==411||window.innerWidth==375||window.innerWidth==360||window.innerWidth==320){
+                                window.location.href='';
+                            }
+                        }
                     }
                 });
             </script>
@@ -127,10 +129,10 @@
                 <script>
                     function windowSize() {
                         if (($(window).width() <= 768)) {
-                            document.write('<td colspan="2" class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。。');  
+                            document.write('<td colspan="2" class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。');  
                         }
                         else {
-                            document.write('<td class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。。');                          
+                            document.write('<td class="is2">美洲豹的分布，從美國西南部和墨西哥向南延伸，經過中美洲的許多地區，到達巴拉圭和阿根廷北部。儘管美國西部目前仍生活著零星的美洲豹。');                          
                         }
                     };
                     windowSize();
@@ -552,7 +554,7 @@
                     };
                     windowSize();
                 </script>
-                <img src="https://lh3.googleusercontent.com/proxy/zMw6XDargzuRENFO6Le9hljOha2ywwnwoWc5j_tHVXNvjbDnNvytRH0vWP5leq_gJTSHu7CDmk4DC_UeOBWahUCZzIko4stFXhLMVeshSmdXaH6-l7kBtrWhBVM4Qzo" alt=""></td>
+                <img src="https://a2.att.hudong.com/84/80/01300543141369142899802800654.jpg" alt=""></td>
             </tr>
             <tr>
                 <th class="is1">分類</th>

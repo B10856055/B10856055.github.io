@@ -4,8 +4,11 @@
     top: 200px;
     z-index: -1;
 }
-main div{
+div h1{
     z-index: 99;
+}
+div a{
+    z-index: -1;
 }
 #北美洲{
     position:fixed;

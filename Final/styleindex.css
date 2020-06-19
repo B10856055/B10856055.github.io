@@ -71,52 +71,49 @@ footer a{
     left : 0px;
 }
 @media screen and (max-width: 1918px){
-    main img{
-        height: 400px;
-    }
     #world{
         right: unset;
         top: 280px;
     }
     #北美洲{
         position:fixed;
-        left: 90px;
-        top: 300px;
+        left: 170px;
+        top: 350px;
     }
     #南美洲{
         position:fixed;
-        left: 170px;
-        top: 430px;
+        left: 280px;
+        top: 550px;
     }
     #歐洲{
         position:fixed;
-        left: 350px;
-        top: 290px;
+        left: 560px;
+        top: 335px;
     }
     #非洲{
         position:fixed;
-        left: 330px;
-        top: 380px;
+        left: 530px;
+        top: 450px;
     }
     #亞洲{
         position:fixed;
-        left: 480px;
-        top: 320px;
+        left: 760px;
+        top: 370px;
     }
     #大洋洲{
         position:fixed;
-        left: 580px;
-        top: 480px;
+        left: 920px;
+        top: 610px;
     }
     #南極洲{
         position:fixed;
-        left: 330px;
-        top: 590px;
+        left: 530px;
+        top: 790px;
     }
     #海洋{
         position:fixed;
-        left: 200px;
-        top: 350px;
+        left: 350px;
+        top: 400px;
     }
 }
 @media screen and (max-width: 1556px){
@@ -224,50 +221,47 @@ footer a{
         top: 280px;
     }
     main img{
-        height: 200px;
-    }
-    main a img{
-        height: 25px;
+        height: 300px;
     }
     #北美洲{
         position:fixed;
         left: 50px;
-        top: 310px;
+        top: 330px;
     }
     #南美洲{
         position:fixed;
-        left: 85px;
-        top: 380px;
+        left: 100px;
+        top: 430px;
     }
     #歐洲{
         position:fixed;
-        left: 180px;
-        top: 300px;
+        left: 230px;
+        top: 320px;
     }
     #非洲{
         position:fixed;
-        left: 170px;
-        top: 350px;
+        left: 220px;
+        top: 370px;
     }
     #亞洲{
         position:fixed;
-        left: 245px;
-        top: 315px;
+        left: 330px;
+        top: 330px;
     }
     #大洋洲{
         position:fixed;
-        left: 295px;
-        top: 395px;
+        left: 410px;
+        top: 450px;
     }
     #南極洲{
         position:fixed;
-        left: 170px;
-        top: 455px;
+        left: 220px;
+        top: 540px;
     }
     #海洋{
         position:fixed;
-        left: 100px;
-        top: 330px;
+        left: 130px;
+        top: 350px;
     }
 }
 @media screen and (max-width:655px){
@@ -277,42 +271,90 @@ footer a{
     #北美洲{
         position:fixed;
         left: 50px;
+        top: 360px;
+    }
+    #南美洲{
+        position:fixed;
+        left: 100px;
+        top: 460px;
+    }
+    #歐洲{
+        position:fixed;
+        left: 230px;
+        top: 350px;
+    }
+    #非洲{
+        position:fixed;
+        left: 220px;
+        top: 400px;
+    }
+    #亞洲{
+        position:fixed;
+        left: 330px;
+        top: 360px;
+    }
+    #大洋洲{
+        position:fixed;
+        left: 410px;
+        top: 490px;
+    }
+    #南極洲{
+        position:fixed;
+        left: 220px;
+        top: 570px;
+    }
+    #海洋{
+        position:fixed;
+        left: 130px;
+        top: 380px;
+    }
+}
+@media screen and (max-width:615px){
+    #world{
+        height: 200px;
+    }
+    div a img{
+        height: 35px;
+    }
+    #北美洲{
+        position:fixed;
+        left: 30px;
         top: 350px;
     }
     #南美洲{
         position:fixed;
-        left: 85px;
-        top: 420px;
+        left: 65px;
+        top: 410px;
     }
     #歐洲{
         position:fixed;
-        left: 180px;
-        top: 340px;
+        left: 160px;
+        top: 330px;
     }
     #非洲{
         position:fixed;
-        left: 170px;
-        top: 390px;
+        left: 150px;
+        top: 380px;
     }
     #亞洲{
         position:fixed;
-        left: 245px;
-        top: 355px;
+        left: 225px;
+        top: 345px;
     }
     #大洋洲{
         position:fixed;
-        left: 295px;
-        top: 435px;
+        left: 275px;
+        top: 425px;
     }
     #南極洲{
         position:fixed;
-        left: 170px;
-        top: 495px;
+        left: 150px;
+        top: 485px;
     }
     #海洋{
         position:fixed;
-        left: 100px;
-        top: 370px;
+        left: 80px;
+        top: 360px;
     }
 }
 @media screen and (max-width:504px){
@@ -321,42 +363,42 @@ footer a{
     }
     #北美洲{
         position:fixed;
-        left: 50px;
+        left: 30px;
         top: 390px;
     }
     #南美洲{
         position:fixed;
-        left: 85px;
+        left: 65px;
         top: 460px;
     }
     #歐洲{
         position:fixed;
-        left: 180px;
+        left: 160px;
         top: 380px;
     }
     #非洲{
         position:fixed;
-        left: 170px;
+        left: 150px;
         top: 430px;
     }
     #亞洲{
         position:fixed;
-        left: 245px;
+        left: 225px;
         top: 395px;
     }
     #大洋洲{
         position:fixed;
-        left: 295px;
-        top: 475px;
+        left: 275px;
+        top: 470px;
     }
     #南極洲{
         position:fixed;
-        left: 170px;
-        top: 535px;
+        left: 150px;
+        top: 525px;
     }
     #海洋{
         position:fixed;
-        left: 100px;
+        left: 80px;
         top: 410px;
     }
 }
@@ -367,42 +409,42 @@ footer a{
     }
     #北美洲{
         position:fixed;
-        left: 25px;
+        left: 15px;
         top: 420px;
     }
     #南美洲{
         position:fixed;
-        left: 50px;
+        left: 40px;
         top: 470px;
     }
     #歐洲{
         position:fixed;
-        left: 120px;
+        left: 110px;
         top: 415px;
     }
     #非洲{
         position:fixed;
-        left: 110px;
-        top: 450px;
+        left: 100px;
+        top: 460px;
     }
     #亞洲{
         position:fixed;
-        left: 170px;
+        left: 160px;
         top: 425px;
     }
     #大洋洲{
         position:fixed;
-        left: 205px;
-        top: 490px;
+        left: 195px;
+        top: 485px;
     }
     #南極洲{
         position:fixed;
-        left: 110px;
-        top: 530px;
+        left: 100px;
+        top: 525px;
     }
     #海洋{
         position:fixed;
-        left: 65px;
+        left: 55px;
         top: 440px;
     }
 }
@@ -412,42 +454,42 @@ footer a{
     }
     #北美洲{
         position:fixed;
-        left: 25px;
+        left: 15px;
         top: 460px;
     }
     #南美洲{
         position:fixed;
-        left: 50px;
+        left: 40px;
         top: 510px;
     }
     #歐洲{
         position:fixed;
-        left: 120px;
+        left: 110px;
         top: 455px;
     }
     #非洲{
         position:fixed;
-        left: 110px;
+        left: 100px;
         top: 490px;
     }
     #亞洲{
         position:fixed;
-        left: 170px;
+        left: 160px;
         top: 465px;
     }
     #大洋洲{
         position:fixed;
-        left: 205px;
+        left: 195px;
         top: 530px;
     }
     #南極洲{
         position:fixed;
-        left: 110px;
-        top: 570px;
+        left: 100px;
+        top: 565px;
     }
     #海洋{
         position:fixed;
-        left: 65px;
+        left: 55px;
         top: 480px;
     }
 }

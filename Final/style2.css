@@ -23,7 +23,7 @@ Table{
     vertical-align: middle;
 }
 td{
-    vertical-align: top;
+    vertical-align: center;
 }
 td img{
     width: 500px;
@@ -31,9 +31,11 @@ td img{
 img #image{
     width: 500px;
 }
+#top1{
+    margin-top: 70px;
+}
 .table1{
     border:2px solid rgb(206, 105, 92);
-    margin-top: 70px;
 }
 .table1 .is1{
     background-color: rgb(240, 124, 109);

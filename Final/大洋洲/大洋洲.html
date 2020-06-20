@@ -32,11 +32,10 @@
                     $('#menuUl').toggleClass('active');
                 })
                 
-                var bodyClass = document.body.classList,
-                    lastScrollY = 100;
+                var bodyClass = document.body.classList;
                 window.addEventListener('scroll', function(){
                 var st = this.scrollY;
-                if( st < lastScrollY) {
+                if( st < 100) {
                     bodyClass.remove('hideUp');
                 }
                 else if(st==100){

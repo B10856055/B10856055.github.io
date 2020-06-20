@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>動物</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleindex.css">
     <link rel="icon" href="icon.gif">
 </head>
 <body>
     <div id="top"></div>
-    <header>
+    <header id="head">
         <nav class="menu" id="menu">
             <a id="menubtn" class="toggle-nav" href="#">☰</a>
             <div class="menu-logo"><a href="index.html"><img src="https://www.solidgoldfish.com.au/wp-content/uploads/2017/01/whale-1.gif" alt=""></a></div>
@@ -29,8 +28,8 @@
             <script>
                 document.getElementById('menubtn').addEventListener('click', function (e) {
                     $('#menuUl').toggleClass('active');
+                    $('#head').toggleClass('active2');
                 })
-                
                 var bodyClass = document.body.classList,
                     lastScrollY = 100;
                 window.addEventListener('scroll', function(){
@@ -49,29 +48,65 @@
             </script>
         </nav>   
     </header>
-    <a href="#top"><img class="fix" src="https://www.propowffer.com/wp-content/uploads/2018/06/go-to-the-top.png"></a>
     <main>
-        <div>
-            <div>
-                <h1>本網站主要在介紹地球上最具代表性的動物，
-                將地球劃分為北美洲、南美洲、歐洲、非洲、
-                亞洲、大洋洲、南極洲及海洋來分別介紹。</h1>
+        <div class="slider_container">
+            <div class="bgimg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg" alt="">
             </div>
-            <div>
-                <br><img src="首頁/世界地圖.png" alt="" id="world">
+            <div class="bgimg">
+                <img src="https://1.bp.blogspot.com/-78IxhHUMHy0/XGNd2vlTfKI/AAAAAAAAa4Y/rk0djHrEIBoXMoqhyPG0vrNlxOHRyVSGwCLcBGAs/s1600/Snapseed.jpg" alt="">                
             </div>
-            <a href="北美洲/北美洲.html"><img src="首頁/北美洲.png" alt="" id="北美洲"></a>
-            <a href="南美洲/南美洲.html"><img src="首頁/南美洲.png" alt="" id="南美洲"></a>
-            <a href="歐洲/歐洲.html"><img src="首頁/歐洲.png" alt="" id="歐洲"></a>
-            <a href="亞洲/亞洲.html"><img src="首頁/亞洲.png" alt="" id="亞洲"></a>
-            <a href="非洲/非洲.html"><img src="首頁/非洲.png" alt="" id="非洲"></a>
-            <a href="大洋洲/大洋洲.html"><img src="首頁/大洋洲.png" alt="" id="大洋洲"></a>
-            <a href="南極洲/南極洲.html"><img src="首頁/南極洲.png" alt="" id="南極洲"></a>
-            <a href="海洋/海洋.html"><img src="首頁/海洋.png" alt="" id="海洋"></a>
+            <div class="bgimg">
+                <img src="https://farm6.staticflickr.com/5559/15111888108_e3bfd593ce_o.jpg" alt="">               
+            </div>
+            <div class="bgimg">
+                <img src="https://miro.medium.com/max/12000/0*eD8E0_A1IBWroF8g" alt="">                
+            </div>
+            <div class="bgimg">
+                <img src="https://fpscdn.yam.com/world/201709/1e/3f/59cf122e61e3f.jpg" alt="">                
+            </div>
+            <div class="bgimg">
+                <img src="http://www.acbnews.com.au/uploadfile/2018/0824/20180824103711950.jpg" alt="">                
+            </div>
+            <div class="bgimg">
+                <img src="https://cff2.earth.com/uploads/2019/07/31135610/New-map-of-Antarctic-ice-flow-is-the-most-accurate-to-date.jpg" alt="">                
+            </div>
+            <div class="bgimg">
+                <img src="https://spidermonkeymotorsports.files.wordpress.com/2015/03/wallpaper-3840x2160-sea-beach-evening-sun-sunset-4k-ultra-hd-hd-background.jpg" alt="">               
+            </div>
+        </div>
+        <div class="slider_container1">
+            <div><h1>北美洲</h1></div>
+            <div><h1>南美洲</h1></div>
+            <div><h1>歐洲</h1></div>
+            <div><h1>非洲</h1></div>
+            <div><h1>亞洲</h1></div>
+            <div><h1>大洋洲</h1></div>
+            <div><h1>南極洲</h1></div>
+            <div><h1>海洋</h1></div>
+        </div>
+        <div class="slider_container2">
+            <div><h1>加拿大洛磯山脈</h1></div>
+            <div><h1>祕魯馬丘比丘</h1></div>
+            <div><h1>英國巨石陣</h1></div>
+            <div><h1>非洲大草原</h1></div>
+            <div><h1>喜馬拉雅山脈</h1></div>
+            <div><h1>澳洲艾爾斯岩</h1></div>
+            <div><h1>南極冰山</h1></div>
+            <div><h1>海天一線</h1></div>
+        </div>
+        <div class="slider_container3">
+            <a href="北美洲/北美洲.html">前往→</a>
+            <a href="南美洲/南美洲.html">前往→</a>
+            <a href="歐洲/歐洲.html">前往→</a>
+            <a href="非洲/非洲.html">前往→</a>
+            <a href="亞洲/亞洲.html">前往→</a>
+            <a href="大洋洲/大洋洲.html">前往→</a>
+            <a href="南極洲/南極洲.html">前往→</a>
+            <a href="海洋/海洋.html">前往→</a>
         </div>
     </main>
     <footer>
-        <a>圖片文字可以點擊喔～</a>
     </footer>
 </body>
 </html>

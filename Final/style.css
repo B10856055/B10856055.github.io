@@ -1,8 +1,8 @@
 .menu{
     width: 100%;
     display: flex;
-    background: rgb(52, 203, 230);
     font-weight: bolder;
+    background-color: rgba(93, 159, 189, 0.87);
     font-family: '微軟正黑體';
 }
 header{
@@ -54,7 +54,7 @@ main {
 .toggle-nav {
     display: none;
     position: absolute;
-    font-size: 30px;
+    font-size: 50px;
 }
 main img{
     width: 500px;
@@ -85,7 +85,7 @@ main img{
         text-decoration: none;
         line-height: 40px;
     }
-    .menu ul.active {
+    .active {
         display: none;
     }
     .menu ul {

@@ -6,8 +6,392 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
     <title>動物</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../aos.css">
     <link rel="icon" href="../icon.gif">
+    <style>
+        body{
+            background-color: rgb(32, 32, 32);
+        }
+        div h1{
+            font-size: 50px;
+            color: white;
+        }
+        .picture1{
+            position: absolute;
+            left: 10%;
+            top: 25%;
+        }
+        .picture1 img{
+            width: 800px;
+        }
+        .name1{
+            position: absolute;
+            top: 25%;
+            left: 60%;
+        }
+        .sort1{
+            position: absolute;
+            top: 35%;
+            left: 60%;
+        }
+        .place1{
+            position: absolute;
+            top: 45%;
+            left: 60%;
+        }
+
+        .picture2{
+            position: absolute;
+            left: 10%;
+            top: 125%;
+        }
+        .picture2 img{
+            width: 800px;
+        }
+        .name2{
+            position: absolute;
+            top: 125%;
+            left: 60%;
+        }
+        .sort2{
+            position: absolute;
+            top: 135%;
+            left: 60%;
+        }
+        .place2{
+            position: absolute;
+            top: 145%;
+            left: 60%;
+        }
+        
+        .picture3{
+            position: absolute;
+            left: 10%;
+            top: 225%;
+        }
+        .picture3 img{
+            width: 800px;
+        }
+        .name3{
+            position: absolute;
+            top: 225%;
+            left: 60%;
+        }
+        .sort3{
+            position: absolute;
+            top: 235%;
+            left: 60%;
+        }
+        .place3{
+            position: absolute;
+            top: 245%;
+            left: 60%;
+        }
+        .foo{
+            position: absolute;
+            top: 310%;
+            width: 99%;
+            bottom: 0;
+            height: 60px;
+            text-align: center;
+            border: rgb(126, 124, 124) solid;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+            border-width: 0.5px;
+            color: rgb(126, 124, 124);
+        }
+        @media screen and (max-width: 1650px) {
+            .picture1 img{
+                width: 700px;
+            }
+            .picture2 img{
+                width: 700px;
+            }
+            .picture3 img{
+                width: 700px;
+            }
+            .picture2{
+                top: 115%;
+            }
+            .name2{
+                top: 115%;
+            }
+            .sort2{
+                top: 125%;
+            }
+            .place2{
+                top: 135%;
+            }
+            .picture3{
+                top: 205%;
+            }
+            .name3{
+                top: 205%;
+            }
+            .sort3{
+                top: 215%;
+            }
+            .place3{
+                top: 225%;
+            }
+            .foo{
+                top: 280%;
+            }
+        }
+        @media screen and (max-width: 1450px) {
+            .picture1 img{
+                width: 600px;
+            }
+            .picture2 img{
+                width: 600px;
+            }
+            .picture3 img{
+                width: 600px;
+            }
+            .picture2{
+                top: 105%;
+            }
+            .name2{
+                top: 105%;
+            }
+            .sort2{
+                top: 115%;
+            }
+            .place2{
+                top: 125%;
+            }
+            .picture3{
+                top: 185%;
+            }
+            .name3{
+                top: 185%;
+            }
+            .sort3{
+                top: 195%;
+            }
+            .place3{
+                top: 205%;
+            }
+            .foo{
+                top: 250%;
+            }
+        }
+        @media screen and (max-width: 1250px) {
+            .picture1 img{
+                width: 500px;
+            }
+            .picture2 img{
+                width: 500px;
+            }
+            .picture3 img{
+                width: 500px;
+            }
+            .picture2{
+                top: 95%;
+            }
+            .name2{
+                top: 95%;
+            }
+            .sort2{
+                top: 105%;
+            }
+            .place2{
+                top: 115%;
+            }
+            .picture3{
+                top: 165%;
+            }
+            .name3{
+                top: 165%;
+            }
+            .sort3{
+                top: 175%;
+            }
+            .place3{
+                top: 185%;
+            }
+            .foo{
+                top: 220%;
+            }
+        }
+        @media screen and (max-width: 1050px) {
+            div h1{
+                font-size: 30px;
+            }
+            .picture1 img{
+                width: 400px;
+            }
+            .picture2 img{
+                width: 400px;
+            }
+            .picture3 img{
+                width: 400px;
+            }
+            .picture2{
+                top: 85%;
+            }
+            .name2{
+                top: 85%;
+            }
+            .sort2{
+                top: 95%;
+            }
+            .place2{
+                top: 105%;
+            }
+            .picture3{
+                top: 145%;
+            }
+            .name3{
+                top: 145%;
+            }
+            .sort3{
+                top: 155%;
+            }
+            .place3{
+                top: 165%;
+            }
+            .foo{
+                top: 190%;
+            }
+        }
+        @media screen and (max-width: 850px) {
+            div h1{
+                font-size: 20px;
+            }
+            .picture1 img{
+                width: 300px;
+            }
+            .picture2 img{
+                width: 300px;
+            }
+            .picture3 img{
+                width: 300px;
+            }
+            .picture1{
+                top: 25%;
+            }
+            .name1{
+                top: 25%;
+            }
+            .sort1{
+                top: 30%;
+            }
+            .place1{
+                top: 35%;
+            }
+            .picture2{
+                top: 75%;
+            }
+            .name2{
+                top: 75%;
+            }
+            .sort2{
+                top: 80%;
+            }
+            .place2{
+                top: 85%;
+            }
+            .picture3{
+                top: 125%;
+            }
+            .name3{
+                top: 125%;
+            }
+            .sort3{
+                top: 130%;
+            }
+            .place3{
+                top: 135%;
+            }
+            .foo{
+                top: 160%;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            div h1{
+                font-size: 20px;
+            }
+            .picture1 img{
+                width: 200px;
+            }
+            .picture2 img{
+                width: 200px;
+            }
+            .picture3 img{
+                width: 200px;
+            }
+            .picture2{
+                top: 65%;
+            }
+            .name2{
+                top: 65%;
+            }
+            .sort2{
+                top: 70%;
+            }
+            .place2{
+                top: 75%;
+            }
+            .picture3{
+                top: 105%;
+            }
+            .name3{
+                top: 105%;
+            }
+            .sort3{
+                top: 110%;
+            }
+            .place3{
+                top: 115%;
+            }
+            .foo{
+                top: 130%;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            div h1{
+                font-size: 10px;
+            }
+            .picture1 img{
+                width: 150px;
+            }
+            .picture2 img{
+                width: 150px;
+            }
+            .picture3 img{
+                width: 150px;
+            }
+            .picture2{
+                top: 55%;
+            }
+            .name2{
+                top: 55%;
+            }
+            .sort2{
+                top: 60%;
+            }
+            .place2{
+                top: 65%;
+            }
+            .picture3{
+                top: 95%;
+            }
+            .name3{
+                top: 95%;
+            }
+            .sort3{
+                top: 100%;
+            }
+            .place3{
+                top: 105%;
+            }
+            .foo{
+                top: 130%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="top"></div>
@@ -32,10 +416,11 @@
                     $('#menuUl').toggleClass('active');
                 })
                 
-                var bodyClass = document.body.classList;
+                var bodyClass = document.body.classList,
+                    lastScrollY = 100;
                 window.addEventListener('scroll', function(){
                 var st = this.scrollY;
-                if( st < 100) {
+                if( st < lastScrollY) {
                     bodyClass.remove('hideUp');
                 }
                 else if(st==100){
@@ -47,696 +432,36 @@
                 lastScrollY = st;
                 });
             </script>
-        </nav>   
+        </nav>
+        <hr>
     </header>
-    <a href="#top"><img class="fix" src="https://www.propowffer.com/wp-content/uploads/2018/06/go-to-the-top.png"></a>
-    <main>
-        <ul class="menu2">
-            <li><a href="#top1" class="animal1">肉食性</a>
-                <ul>
-                    <li><a href="#top1" class="animal1">動物1</a></li>
-                    <li><a href="#top1-2" class="animal1">動物2</a></li>
-                    <li><a href="#top1-3" class="animal1">動物3</a></li>
-                </ul>
-            </li>
-            <li><a href="#top2" class="animal2">草食性</a>
-                <ul>
-                    <li><a href="#top2" class="animal2">動物1</a></li>
-                    <li><a href="#top2-2" class="animal2">動物2</a></li>
-                    <li><a href="#top2-3" class="animal2">動物3</a></li>
-                </ul>
-            </li>
-            <li><a href="#top3" class="animal3">雜食性</a>
-                <ul>
-                    <li><a href="#top3" class="animal3">動物1</a></li>
-                    <li><a href="#top3-2" class="animal3">動物2</a></li>
-                    <li><a href="#top3-3" class="animal3">動物3</a></li>
-                </ul>
-            </li>
-        </ul>
-        <table border="1" class="table1" id="top1">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">貓咪</td>
-                <script>
-                    var x=0,y;
-                    
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();                  
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <script>
-                $(window).resize(function(){
-                    var t = document.documentElement.scrollTop||document.body.scrollTop;
-                    if(t < 1){
-                        if(window.innerWidth==5120||window.innerWidth==3840||window.innerWidth==3000||window.innerWidth==2960||window.innerWidth==2880||window.innerWidth==2560||window.innerWidth==2048||window.innerWidth==2304||window.innerWidth==1920||window.innerWidth==1440||window.innerWidth==1366||window.innerWidth==1280||window.innerWidth==1080||window.innerWidth==1550||window.innerWidth==960||window.innerWidth==800||window.innerWidth==768||window.innerWidth==750||window.innerWidth==720||window.innerWidth==640||window.innerWidth==540||window.innerWidth==480||window.innerWidth==414||window.innerWidth==411||window.innerWidth==375||window.innerWidth==360||window.innerWidth==320){
-                            window.location.href='';
-                        }
-                    }
-                    else if(t>1&&window.innerWidth>=1080){
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                });
-            </script>
-            <tr>
-                <th class="is1">分類</th>               
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table1" id="top1-2">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">貓咪</td>
-                <script>
-                    var x=0,y;
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();                  
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>               
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table1" id="top1-3">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">貓咪</td>
-                <script>
-                    var x=0,y;
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();                  
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>               
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-
-
-
-        <table border="1" class="table2" id="top2">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table2" id="top2-2">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table2" id="top2-3">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script>
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-
-
-
-        <table border="1" class="table3" id="top3">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script> 
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table3" id="top3-2">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script> 
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-        <table border="1" class="table3" id="top3-3">
-            <tr>
-                <th class="is1">動物名稱</th>
-                <td class="is2" id="is2">老虎</td>
-                <script>
-                    function windowSize() {
-                        if(($(window).width() <= 350)){
-                            document.write('<td align="center" class="is3">')
-                        }
-                        else if(($(window).width() <= 1024)){
-                            document.write('<td rowspan="2" align="center" class="is3">'); 
-                        }
-                        else if (1024 < $(window).width()&&$(window).width() <= 1550) {                            
-                            document.write('<td rowspan="3" align="center" class="is3">');  
-                        }
-                        else {
-                            document.write('<td rowspan="4" align="center" class="is3">');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                <img src="https://storage.googleapis.com/petsmao-images/images/2019/10/5a56af32-1571795279-a7d32647e0a334efbedeb39fdbad225a.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <th class="is1">分類</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 350)) {
-                            document.write('<td colspan="2" class="is2" id="is2">哺乳類');  
-                        }
-                        else {
-                            document.write('<td class="is2" id="is2">哺乳類');                  
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">分布</th>
-                <script>
-                    function windowSize() {
-                        if (($(window).width() <= 1024)) {
-                            document.write('<td colspan="2" class="is2">家中家中家中家中家中家中');  
-                        }
-                        else {
-                            document.write('<td class="is2">家中家中家中家中家中家中');                          
-                        }
-                    };
-                    windowSize();
-                </script>
-                </td>
-            </tr>
-            <tr>
-                <th class="is1">簡介</th>
-                <script>
-                    function windowSize() {
-                        if ($(window).width() > 1550) {
-                            document.write('<td class="is3">'); 
-                        }
-                        else {
-                            document.write('<td colspan="2" class="is3">');                            
-                        }
-                    };
-                    windowSize();
-                </script> 
-                    <a>貓（學名：Felis Catus[1][2][3]或Felis silvestris catus），通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。[4]現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於犬（或稱狗），但同時也是危害十分廣泛的外來種，由於獵捕的習慣，威脅著很多原生鳥類、齧齒類的生存，是世界百大外來入侵種之一。</a>
-                    <a>古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</a>
-                </td>
-            </tr>
-        </table>
-    </main>
+    <!--<a href="#top"><img class="fix" src="https://www.propowffer.com/wp-content/uploads/2018/06/go-to-the-top.png"></a>-->
+    <div class="animal">
+        <div class="picture1" data-aos="zoom-out-right"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20200517/1920x1428_641954223299.jpg" alt=""></div>
+        <div class="name1" data-aos="fade-right" data-aos-delay="100"><h1>小海豹</h1></div>
+        <div class="sort1" data-aos="fade-right" data-aos-delay="200"><h1>哺乳類</h1></div>
+        <div class="place1" data-aos="fade-right" data-aos-delay="300"><h1>海洋</h1></div>
+    </div>
+    <div class="animal2">
+        <div class="picture2" data-aos="zoom-out-right"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20200517/1920x1428_641954223299.jpg" alt=""></div>
+        <div class="name2" data-aos="fade-right" data-aos-delay="100"><h1>小海豹</h1></div>
+        <div class="sort2" data-aos="fade-right" data-aos-delay="200"><h1>哺乳類</h1></div>
+        <div class="place2" data-aos="fade-right" data-aos-delay="300"><h1>海洋</h1></div>
+    </div>
+    <div class="animal3">
+        <div class="picture3" data-aos="zoom-out-right"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20200517/1920x1428_641954223299.jpg" alt=""></div>
+        <div class="name3" data-aos="fade-right" data-aos-delay="100"><h1>小海豹</h1></div>
+        <div class="sort3" data-aos="fade-right" data-aos-delay="200"><h1>哺乳類</h1></div>
+        <div class="place3" data-aos="fade-right" data-aos-delay="300"><h1>海洋</h1></div>
+    </div>
+    <div class="foo">
+        <h2>B10856055</h2>
+    </div>
+    <script src="../aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ese-in-out-sine',
+        });
+    </script>
 </body>
 </html>

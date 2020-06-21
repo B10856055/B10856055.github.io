@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AOS Animations 進階範例</title>
+    <link rel="stylesheet" href="aos.css">
+</head>
+<style>
+    .section-list {
+        display: flex;
+    }
+
+    .section {
+        flex: 1;
+        height: 300px;
+        background: lightblue;
+        margin: 10px;
+
+    }
+
+    /*-------------------------------
+      如何自己新增自訂義動畫？範例如下
+    ---------------------------------*/
+
+    [data-aos="example"] {
+        /*初始值*/
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+
+    [data-aos="example"].aos-animate {
+        transform: rotate(0);
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="section-list">
+        <div class="section" data-aos="example" data-aos-delay="100"></div>
+        <div class="section" data-aos="example" data-aos-delay="300"></div>
+        <div class="section" data-aos="example" data-aos-delay="500"></div>
+        <div class="section" data-aos="example" data-aos-delay="700"></div>
+    </div>
+    <div class="section-list">
+        <div class="section" data-aos="example" data-aos-delay="100"></div>
+        <div class="section" data-aos="example" data-aos-delay="300"></div>
+        <div class="section" data-aos="example" data-aos-delay="500"></div>
+        <div class="section" data-aos="example" data-aos-delay="700"></div>
+    </div>
+    <div class="section-list">
+        <div class="section" data-aos="example" data-aos-delay="100"></div>
+        <div class="section" data-aos="example" data-aos-delay="300"></div>
+        <div class="section" data-aos="example" data-aos-delay="500"></div>
+        <div class="section" data-aos="example" data-aos-delay="700"></div>
+    </div>
+    <div class="section-list">
+        <div class="section" data-aos="example" data-aos-delay="100"></div>
+        <div class="section" data-aos="example" data-aos-delay="300"></div>
+        <div class="section" data-aos="example" data-aos-delay="500"></div>
+        <div class="section" data-aos="example" data-aos-delay="700"></div>
+    </div>
+    <div class="section-list">
+        <div class="section" data-aos="example" data-aos-delay="100"></div>
+        <div class="section" data-aos="example" data-aos-delay="300"></div>
+        <div class="section" data-aos="example" data-aos-delay="500"></div>
+        <div class="section" data-aos="example" data-aos-delay="700"></div>
+    </div>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-cubic',
+            duration: '500'
+        });
+    </script>
+</body>
+
+</html>

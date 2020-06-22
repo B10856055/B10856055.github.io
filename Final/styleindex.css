@@ -18,7 +18,7 @@ body{
 }
 .slider_container1 div {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10%;
     font-size: 80px;
     color: white;
@@ -145,228 +145,229 @@ body{
     -webkit-animation-delay: 35s;
             animation-delay: 35s;
 }
-
-.slider_container2 div{
-    -webkit-animation: round2 40s linear infinite;
-            animation: round2 40s linear infinite;
-}
-.slider_container2 div{
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    font-size: 40px;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.3em;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-@-webkit-keyframes round2 {
-    2.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 50%;
-        /* 0 - 1秒 滑入*/
+@media screen and (min-width: 641px) {
+    .slider_container2 div{
+        -webkit-animation: round2 40s linear infinite;
+                animation: round2 40s linear infinite;
     }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 50%;
-        /* 1- 4秒靜止*/
-    }
-    12.5% {
-        opacity: 0.5;
-        filter: alpha(opacity=100);
-        top: 52.5%;
-        /* 4-5秒滑出*/
-    }
-    13.75% {
+    .slider_container2 div{
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        font-size: 40px;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.3em;
+        font-family: Arial, Helvetica, sans-serif;
         opacity: 0;
         filter: alpha(opacity=0);
-        top: 52.5%;
-        /* 5-5.5秒淡出*/
     }
-    15% {
+    @-webkit-keyframes round2 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 50%;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 50%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 0.5;
+            filter: alpha(opacity=100);
+            top: 52.5%;
+            /* 4-5秒滑出*/
+        }
+        13.75% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 52.5%;
+            /* 5-5.5秒淡出*/
+        }
+        15% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 50%;
+            /* 5.5-6秒回到起始位置*/
+        }
+    }
+    @keyframes round2 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 50%;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 50%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 0.5;
+            filter: alpha(opacity=100);
+            top: 52.5%;
+            /* 4-5秒滑出*/
+        }
+        13.75% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 52.5%;
+            /* 5-5.5秒淡出*/
+        }
+        15% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 50%;
+            /* 5.5-6秒回到起始位置*/
+        }
+    }
+    .slider_container2 div:nth-child(1) {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+    }
+
+    .slider_container2 div:nth-child(2) {
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+    }
+
+    .slider_container2 div:nth-child(3) {
+        -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+    }
+
+    .slider_container2 div:nth-child(4) {
+        -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+    }
+
+    .slider_container2 div:nth-child(5) {
+        -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+    }
+    .slider_container2 div:nth-child(6) {
+        -webkit-animation-delay: 25s;
+                animation-delay: 25s;
+    }
+    .slider_container2 div:nth-child(7) {
+        -webkit-animation-delay: 30s;
+                animation-delay: 30s;
+    }
+    .slider_container2 div:nth-child(8) {
+        -webkit-animation-delay: 35s;
+                animation-delay: 35s;
+    }
+
+    .slider_container3 a{
+        -webkit-animation: round3 40s linear infinite;
+                animation: round3 40s linear infinite;
+    }
+    .slider_container3 a{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.3em;
+        font-family: Arial, Helvetica, sans-serif;
         opacity: 0;
         filter: alpha(opacity=0);
-        top: 50%;
-        /* 5.5-6秒回到起始位置*/
     }
-}
-@keyframes round2 {
-    2.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 50%;
-        /* 0 - 1秒 滑入*/
+    .slider_container3 a{
+        border-style:solid;
+        border-color: white;
+        padding: 10px 20px;
+        text-decoration:none;
+        z-index: -1;
     }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 50%;
-        /* 1- 4秒靜止*/
+    .slider_container3 a:hover{
+        color: rgb(106, 191, 219);
+        background-color: white;
+        text-shadow: none;
     }
-    12.5% {
-        opacity: 0.5;
-        filter: alpha(opacity=100);
-        top: 52.5%;
-        /* 4-5秒滑出*/
+    @-webkit-keyframes round3 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            z-index: 1;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            /* 4-5秒滑出*/
+        }
     }
-    13.75% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        top: 52.5%;
-        /* 5-5.5秒淡出*/
+    @keyframes round3 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            z-index: 1;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 70%;
+            /* 4-5秒滑出*/
+        }
     }
-    15% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        top: 50%;
-        /* 5.5-6秒回到起始位置*/
+    .slider_container3 a:nth-child(1) {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
     }
-}
-.slider_container2 div:nth-child(1) {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-}
 
-.slider_container2 div:nth-child(2) {
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
-}
-
-.slider_container2 div:nth-child(3) {
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
-}
-
-.slider_container2 div:nth-child(4) {
-    -webkit-animation-delay: 15s;
-            animation-delay: 15s;
-}
-
-.slider_container2 div:nth-child(5) {
-    -webkit-animation-delay: 20s;
-            animation-delay: 20s;
-}
-.slider_container2 div:nth-child(6) {
-    -webkit-animation-delay: 25s;
-            animation-delay: 25s;
-}
-.slider_container2 div:nth-child(7) {
-    -webkit-animation-delay: 30s;
-            animation-delay: 30s;
-}
-.slider_container2 div:nth-child(8) {
-    -webkit-animation-delay: 35s;
-            animation-delay: 35s;
-}
-
-.slider_container3 a{
-    -webkit-animation: round3 40s linear infinite;
-            animation: round3 40s linear infinite;
-}
-.slider_container3 a{
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    font-size: 30px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.3em;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.slider_container3 a{
-    border-style:solid;
-    border-color: white;
-    padding: 10px 20px;
-    text-decoration:none;
-    z-index: -1;
-}
-.slider_container3 a:hover{
-    color: rgb(106, 191, 219);
-    background-color: white;
-    text-shadow: none;
-}
-@-webkit-keyframes round3 {
-    2.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        z-index: 1;
-        /* 0 - 1秒 滑入*/
+    .slider_container3 a:nth-child(2) {
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
     }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        /* 1- 4秒靜止*/
-    }
-    12.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        /* 4-5秒滑出*/
-    }
-}
-@keyframes round3 {
-    2.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        z-index: 1;
-        /* 0 - 1秒 滑入*/
-    }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        /* 1- 4秒靜止*/
-    }
-    12.5% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        top: 70%;
-        /* 4-5秒滑出*/
-    }
-}
-.slider_container3 a:nth-child(1) {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-}
 
-.slider_container3 a:nth-child(2) {
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
-}
+    .slider_container3 a:nth-child(3) {
+        -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+    }
 
-.slider_container3 a:nth-child(3) {
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
-}
+    .slider_container3 a:nth-child(4) {
+        -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+    }
 
-.slider_container3 a:nth-child(4) {
-    -webkit-animation-delay: 15s;
-            animation-delay: 15s;
-}
-
-.slider_container3 a:nth-child(5) {
-    -webkit-animation-delay: 20s;
-            animation-delay: 20s;
-}
-.slider_container3 a:nth-child(6) {
-    -webkit-animation-delay: 25s;
-            animation-delay: 25s;
-}
-.slider_container3 a:nth-child(7) {
-    -webkit-animation-delay: 30s;
-            animation-delay: 30s;
-}
-.slider_container3 a:nth-child(8) {
-    -webkit-animation-delay: 35s;
-            animation-delay: 35s;
+    .slider_container3 a:nth-child(5) {
+        -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+    }
+    .slider_container3 a:nth-child(6) {
+        -webkit-animation-delay: 25s;
+                animation-delay: 25s;
+    }
+    .slider_container3 a:nth-child(7) {
+        -webkit-animation-delay: 30s;
+                animation-delay: 30s;
+    }
+    .slider_container3 a:nth-child(8) {
+        -webkit-animation-delay: 35s;
+                animation-delay: 35s;
+    }
 }
 
 .menu{
@@ -470,11 +471,230 @@ main {
         right: unset;
     }
 }
-@media screen and (max-width: 548px) {
+@media screen and (max-width: 640px) {
     .slider_container1 div{
         font-size: 40px;
     }
     .slider_container2 div{
+        -webkit-animation: round2 40s linear infinite;
+                animation: round2 40s linear infinite;
+    }
+    .slider_container2 div{
+        position: absolute;
+        top: 35%;
+        left: 10%;
         font-size: 20px;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    @-webkit-keyframes round2 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 40%;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 40%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 0.5;
+            filter: alpha(opacity=100);
+            top: 42.5%;
+            /* 4-5秒滑出*/
+        }
+        13.75% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 42.5%;
+            /* 5-5.5秒淡出*/
+        }
+        15% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 40%;
+            /* 5.5-6秒回到起始位置*/
+        }
+    }
+    @keyframes round2 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 40%;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 40%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 0.5;
+            filter: alpha(opacity=100);
+            top: 42.5%;
+            /* 4-5秒滑出*/
+        }
+        13.75% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 42.5%;
+            /* 5-5.5秒淡出*/
+        }
+        15% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 40%;
+            /* 5.5-6秒回到起始位置*/
+        }
+    }
+    .slider_container2 div:nth-child(1) {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+    }
+
+    .slider_container2 div:nth-child(2) {
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+    }
+
+    .slider_container2 div:nth-child(3) {
+        -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+    }
+
+    .slider_container2 div:nth-child(4) {
+        -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+    }
+
+    .slider_container2 div:nth-child(5) {
+        -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+    }
+    .slider_container2 div:nth-child(6) {
+        -webkit-animation-delay: 25s;
+                animation-delay: 25s;
+    }
+    .slider_container2 div:nth-child(7) {
+        -webkit-animation-delay: 30s;
+                animation-delay: 30s;
+    }
+    .slider_container2 div:nth-child(8) {
+        -webkit-animation-delay: 35s;
+                animation-delay: 35s;
+    }
+
+    .slider_container3 a{
+        -webkit-animation: round3 40s linear infinite;
+                animation: round3 40s linear infinite;
+    }
+    .slider_container3 a{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    .slider_container3 a{
+        border-style:solid;
+        border-color: white;
+        padding: 10px 20px;
+        text-decoration:none;
+        z-index: -1;
+    }
+    .slider_container3 a:hover{
+        color: rgb(106, 191, 219);
+        background-color: white;
+        text-shadow: none;
+    }
+    @-webkit-keyframes round3 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            z-index: 1;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            /* 4-5秒滑出*/
+        }
+    }
+    @keyframes round3 {
+        2.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            z-index: 1;
+            /* 0 - 1秒 滑入*/
+        }
+        10% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            /* 1- 4秒靜止*/
+        }
+        12.5% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 55%;
+            /* 4-5秒滑出*/
+        }
+    }
+    .slider_container3 a:nth-child(1) {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+    }
+
+    .slider_container3 a:nth-child(2) {
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+    }
+
+    .slider_container3 a:nth-child(3) {
+        -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+    }
+
+    .slider_container3 a:nth-child(4) {
+        -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+    }
+
+    .slider_container3 a:nth-child(5) {
+        -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+    }
+    .slider_container3 a:nth-child(6) {
+        -webkit-animation-delay: 25s;
+                animation-delay: 25s;
+    }
+    .slider_container3 a:nth-child(7) {
+        -webkit-animation-delay: 30s;
+                animation-delay: 30s;
+    }
+    .slider_container3 a:nth-child(8) {
+        -webkit-animation-delay: 35s;
+                animation-delay: 35s;
     }
 }

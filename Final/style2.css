@@ -1,197 +1,382 @@
-Table{
-    border-spacing: 0px;
-    margin: auto;
-    display:table;
-    width: 75%;
-    border-collapse: separate;
-    margin-top: 30px;
-    font-family: '微軟正黑體';
+body{
+    background-color: rgb(32, 32, 32);
 }
-.is1{
-    text-align: center;
-    font-size: 30px;
-    width: 300px;
+div h1{
+    font-size: 50px;
+    color: white;
 }
-.is2{
-    font-size: 20px;
+.picture1{
+    position: absolute;
+    left: 10%;
+    top: 25%;
 }
-.is3{
-    width: 0px;
+.picture1 img{
+    width: 800px;
 }
-#is2{
-    text-align: center;
-    vertical-align: middle;
+.name1{
+    position: absolute;
+    top: 25%;
+    left: 60%;
 }
-td{
-    vertical-align: center;
+.sort1{
+    position: absolute;
+    top: 35%;
+    left: 60%;
 }
-td img{
-    width: 500px;
-}
-img #image{
-    width: 500px;
-}
-#top1{
-    margin-top: 70px;
-}
-.table1{
-    border:2px solid rgb(206, 105, 92);
-}
-.table1 .is1{
-    background-color: rgb(240, 124, 109);
-}
-.table2{
-    border:2px solid rgb(122, 190, 122);
-}
-.table2 .is1{
-    background-color: rgb(157, 238, 157);
-}
-.table3{
-    border:2px solid rgb(83, 165, 219);
-}
-.table3 .is1{
-    background-color: rgb(92, 188, 252);
+.place1{
+    position: absolute;
+    top: 45%;
+    left: 60%;
 }
 
-main ul {
-    margin:0;
-    padding: 0;
-    list-style: none;
+.picture2{
     position: absolute;
-    left: 50%;
-    margin-left: -230px;
+    left: 10%;
+    top: 125%;
 }
-.menu2{
-    margin-top: 10px;
+.picture2 img{
+    width: 800px;
 }
-ul.menu2 {
-    border: #ccc 1px solid;
-    display: inline-block;
-    font-family: '微軟正黑體';
-    font-size: 30px;
-    font-weight: bolder;
-}
-ul.menu2 li {
-    position: relative;
-    white-space: nowrap;
-    border-right: #ccc 1px solid;
-}
-ul.menu2 > li:last-child {
-    border-right: none;
-}
-ul.menu2 > li {
-    float: left;
-}
-ul.menu2 a {
-    background-color: #fff;
-    color: #333;
-    display: block;
-    padding: 0 30px;
-    text-decoration: none;
-    line-height: 40px;
-}
-ul.menu2.animal1:hover {
-    background-color: rgb(240, 124, 109);
-    color: #fff;
-}
-ul.menu2 li:hover > a.animal1 {
-    background-color: rgb(240, 124, 109);
-    color: #fff;
-}
-ul.menu2.animal2:hover {
-    background-color: rgb(157, 238, 157);
-    color: #fff;
-}
-ul.menu2 li:hover > a.animal2 {
-    background-color: rgb(157, 238, 157);
-    color: #fff;
-}
-ul.menu2.animal3:hover {
-    background-color: rgb(92, 188, 252);
-    color: #fff;
-}
-ul.menu2 li:hover > a.animal3 {
-    background-color: rgb(92, 188, 252);
-    color: #fff;
-}
-ul.menu2 ul {
-    border: #ccc 1px solid;
+.name2{
     position: absolute;
-    left: 229px;
-    top: 100%;
-    min-width: 150px;
+    top: 125%;
+    left: 60%;
 }
-ul.menu2 ul li {
-    border-bottom: #ccc 1px solid;
+.sort2{
+    position: absolute;
+    top: 135%;
+    left: 60%;
 }
-ul.menu2 ul li:last-child {
+.place2{
+    position: absolute;
+    top: 145%;
+    left: 60%;
+}
+
+.picture3{
+    position: absolute;
+    left: 10%;
+    top: 225%;
+}
+.picture3 img{
+    width: 800px;
+}
+.name3{
+    position: absolute;
+    top: 225%;
+    left: 60%;
+}
+.sort3{
+    position: absolute;
+    top: 235%;
+    left: 60%;
+}
+.place3{
+    position: absolute;
+    top: 245%;
+    left: 60%;
+}
+.foo{
+    position: absolute;
+    top: 310%;
+    width: 99%;
+    bottom: 0;
+    height: 60px;
+    text-align: center;
+    border: rgb(126, 124, 124) solid;
     border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-width: 0.5px;
+    color: rgb(126, 124, 124);
 }
-ul.menu2 ul {
-    display: none;
+@media screen and (max-width: 1650px) {
+    .picture1 img{
+        width: 700px;
+    }
+    .picture2 img{
+        width: 700px;
+    }
+    .picture3 img{
+        width: 700px;
+    }
+    .picture2{
+        top: 115%;
+    }
+    .name2{
+        top: 115%;
+    }
+    .sort2{
+        top: 125%;
+    }
+    .place2{
+        top: 135%;
+    }
+    .picture3{
+        top: 205%;
+    }
+    .name3{
+        top: 205%;
+    }
+    .sort3{
+        top: 215%;
+    }
+    .place3{
+        top: 225%;
+    }
+    .foo{
+        top: 280%;
+    }
 }
-ul.menu2 li:hover > ul {
-    display: block;
+@media screen and (max-width: 1450px) {
+    .picture1 img{
+        width: 600px;
+    }
+    .picture2 img{
+        width: 600px;
+    }
+    .picture3 img{
+        width: 600px;
+    }
+    .picture2{
+        top: 105%;
+    }
+    .name2{
+        top: 105%;
+    }
+    .sort2{
+        top: 115%;
+    }
+    .place2{
+        top: 125%;
+    }
+    .picture3{
+        top: 185%;
+    }
+    .name3{
+        top: 185%;
+    }
+    .sort3{
+        top: 195%;
+    }
+    .place3{
+        top: 205%;
+    }
+    .foo{
+        top: 250%;
+    }
 }
-@media screen and (max-width:1411px){
-    td img{
+@media screen and (max-width: 1250px) {
+    .picture1 img{
+        width: 500px;
+    }
+    .picture2 img{
+        width: 500px;
+    }
+    .picture3 img{
+        width: 500px;
+    }
+    .picture2{
+        top: 95%;
+    }
+    .name2{
+        top: 95%;
+    }
+    .sort2{
+        top: 105%;
+    }
+    .place2{
+        top: 115%;
+    }
+    .picture3{
+        top: 165%;
+    }
+    .name3{
+        top: 165%;
+    }
+    .sort3{
+        top: 175%;
+    }
+    .place3{
+        top: 185%;
+    }
+    .foo{
+        top: 220%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    div h1{
+        font-size: 30px;
+    }
+    .picture1 img{
         width: 400px;
     }
-    img #image{
+    .picture2 img{
         width: 400px;
     }
+    .picture3 img{
+        width: 400px;
+    }
+    .picture2{
+        top: 85%;
+    }
+    .name2{
+        top: 85%;
+    }
+    .sort2{
+        top: 95%;
+    }
+    .place2{
+        top: 105%;
+    }
+    .picture3{
+        top: 145%;
+    }
+    .name3{
+        top: 145%;
+    }
+    .sort3{
+        top: 155%;
+    }
+    .place3{
+        top: 165%;
+    }
+    .foo{
+        top: 190%;
+    }
 }
-@media screen and (max-width:1311px){
-    td img{
+@media screen and (max-width: 850px) {
+    div h1{
+        font-size: 20px;
+    }
+    .picture1 img{
         width: 300px;
     }
-    img #image{
+    .picture2 img{
         width: 300px;
     }
+    .picture3 img{
+        width: 300px;
+    }
+    .picture1{
+        top: 25%;
+    }
+    .name1{
+        top: 25%;
+    }
+    .sort1{
+        top: 30%;
+    }
+    .place1{
+        top: 35%;
+    }
+    .picture2{
+        top: 75%;
+    }
+    .name2{
+        top: 75%;
+    }
+    .sort2{
+        top: 80%;
+    }
+    .place2{
+        top: 85%;
+    }
+    .picture3{
+        top: 125%;
+    }
+    .name3{
+        top: 125%;
+    }
+    .sort3{
+        top: 130%;
+    }
+    .place3{
+        top: 135%;
+    }
+    .foo{
+        top: 160%;
+    }
 }
-@media screen and (max-width:1024px){
-    td img{
+@media screen and (max-width: 650px) {
+    div h1{
+        font-size: 20px;
+    }
+    .picture1 img{
         width: 200px;
     }
-    img #image{
+    .picture2 img{
         width: 200px;
+    }
+    .picture3 img{
+        width: 200px;
+    }
+    .picture2{
+        top: 65%;
+    }
+    .name2{
+        top: 65%;
+    }
+    .sort2{
+        top: 70%;
+    }
+    .place2{
+        top: 75%;
+    }
+    .picture3{
+        top: 105%;
+    }
+    .name3{
+        top: 105%;
+    }
+    .sort3{
+        top: 110%;
+    }
+    .place3{
+        top: 115%;
+    }
+    .foo{
+        top: 130%;
     }
 }
-@media screen and (max-width:786px){
-    td img{
-        height: unset;
-        width: 200px;
+@media screen and (max-width: 450px) {
+    div h1{
+        font-size: 10px;
     }
-    img #image{
-        height: unset;
-        width: 200px;
+    .picture1 img{
+        width: 150px;
     }
-}
-@media screen and (max-width:486px){
-    .table1{
-        border:2px solid rgb(206, 105, 92);
-        margin-top: 30px;
+    .picture2 img{
+        width: 150px;
     }
-    main ul {
-        margin:0;
-        padding: 0;
-        position: unset;
+    .picture3 img{
+        width: 150px;
     }
-    #top1{
-        margin-top: 30px;
+    .picture2{
+        top: 55%;
     }
-    ul.menu2 > li {
-        float: unset;
+    .name2{
+        top: 55%;
     }
-    ul.menu2 li{
-        border-bottom: #ccc 1px solid;
+    .sort2{
+        top: 60%;
     }
-    ul.menu2 ul {
-        border: #ccc 1px solid;
-        position: absolute;
-        left: 229px;
-        top: 10px;
-        left: 90%;
-        z-index: 2;
+    .place2{
+        top: 65%;
+    }
+    .picture3{
+        top: 85%;
+    }
+    .name3{
+        top: 85%;
+    }
+    .sort3{
+        top: 90%;
+    }
+    .place3{
+        top: 95%;
+    }
+    .foo{
+        top: 105%;
     }
 }

@@ -380,3 +380,13 @@ div h1{
         top: 105%;
     }
 }
+[data-aos="example"] {
+    /*初始值*/
+    opacity: 0;
+    transform: rotate(360deg);
+}
+
+[data-aos="example"].aos-animate {
+    transform: rotate(0);
+    opacity: 1;
+}

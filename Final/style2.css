@@ -20,12 +20,12 @@ div h1{
 }
 .sort1{
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 60%;
 }
 .place1{
     position: absolute;
-    top: 45%;
+    top: 65%;
     left: 60%;
 }
 
@@ -44,12 +44,12 @@ div h1{
 }
 .sort2{
     position: absolute;
-    top: 135%;
+    top: 145%;
     left: 60%;
 }
 .place2{
     position: absolute;
-    top: 145%;
+    top: 165%;
     left: 60%;
 }
 
@@ -68,12 +68,12 @@ div h1{
 }
 .sort3{
     position: absolute;
-    top: 235%;
+    top: 245%;
     left: 60%;
 }
 .place3{
     position: absolute;
-    top: 245%;
+    top: 265%;
     left: 60%;
 }
 .foo{
@@ -107,10 +107,10 @@ div h1{
         top: 115%;
     }
     .sort2{
-        top: 125%;
+        top: 135%;
     }
     .place2{
-        top: 135%;
+        top: 155%;
     }
     .picture3{
         top: 205%;
@@ -119,10 +119,10 @@ div h1{
         top: 205%;
     }
     .sort3{
-        top: 215%;
+        top: 225%;
     }
     .place3{
-        top: 225%;
+        top: 245%;
     }
     .foo{
         top: 280%;
@@ -145,10 +145,10 @@ div h1{
         top: 105%;
     }
     .sort2{
-        top: 115%;
+        top: 125%;
     }
     .place2{
-        top: 125%;
+        top: 145%;
     }
     .picture3{
         top: 185%;
@@ -157,10 +157,10 @@ div h1{
         top: 185%;
     }
     .sort3{
-        top: 195%;
+        top: 205%;
     }
     .place3{
-        top: 205%;
+        top: 225%;
     }
     .foo{
         top: 250%;
@@ -176,6 +176,12 @@ div h1{
     .picture3 img{
         width: 500px;
     }
+    .sort1{
+        top: 40%;
+    }
+    .place1{
+        top: 55%;
+    }
     .picture2{
         top: 95%;
     }
@@ -183,10 +189,10 @@ div h1{
         top: 95%;
     }
     .sort2{
-        top: 105%;
+        top: 110%;
     }
     .place2{
-        top: 115%;
+        top: 125%;
     }
     .picture3{
         top: 165%;
@@ -195,10 +201,10 @@ div h1{
         top: 165%;
     }
     .sort3{
-        top: 175%;
+        top: 180%;
     }
     .place3{
-        top: 185%;
+        top: 195%;
     }
     .foo{
         top: 220%;
@@ -224,10 +230,10 @@ div h1{
         top: 85%;
     }
     .sort2{
-        top: 95%;
+        top: 100%;
     }
     .place2{
-        top: 105%;
+        top: 115%;
     }
     .picture3{
         top: 145%;
@@ -236,10 +242,10 @@ div h1{
         top: 145%;
     }
     .sort3{
-        top: 155%;
+        top: 160%;
     }
     .place3{
-        top: 165%;
+        top: 175%;
     }
     .foo{
         top: 190%;
@@ -265,10 +271,10 @@ div h1{
         top: 25%;
     }
     .sort1{
-        top: 30%;
+        top: 35%;
     }
     .place1{
-        top: 35%;
+        top: 45%;
     }
     .picture2{
         top: 75%;
@@ -277,10 +283,10 @@ div h1{
         top: 75%;
     }
     .sort2{
-        top: 80%;
+        top: 85%;
     }
     .place2{
-        top: 85%;
+        top: 95%;
     }
     .picture3{
         top: 125%;
@@ -289,10 +295,10 @@ div h1{
         top: 125%;
     }
     .sort3{
-        top: 130%;
+        top: 135%;
     }
     .place3{
-        top: 135%;
+        top: 145%;
     }
     .foo{
         top: 160%;
@@ -310,6 +316,12 @@ div h1{
     }
     .picture3 img{
         width: 200px;
+    }
+    .sort1{
+        top: 30%;
+    }
+    .place1{
+        top: 35%;
     }
     .picture2{
         top: 65%;

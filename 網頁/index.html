@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子鼻開發</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+  <header id="head">
+    <nav class="menu" id="menu">
+      <a id="menubtn" class="toggle-nav" href="#">☰</a>
+      <div class="menu-logo"><a href="index.html"><img src="https://www.solidgoldfish.com.au/wp-content/uploads/2017/01/whale-1.gif" alt=""></a></div>
+      <ul id="menuUl" class="menuactive">
+        <li><a href="index.html" style="color: #70e6ec;">首頁</a></li>
+        <li><a href="">收集data</a></li>
+        <li><a href="">分析data</a></li>
+      </ul>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+          document.getElementById('menubtn').addEventListener('click', function (e) {
+              $('#menuUl').toggleClass('menuactive');
+              $('#head').toggleClass('menuactive2');
+          })
+          var bodyClass = document.body.classList,
+              lastScrollY = 100;
+          window.addEventListener('scroll', function(){
+          var st = this.scrollY;
+          if( st < lastScrollY) {
+              bodyClass.remove('hideUp');
+          }
+          else if(st==100){
+              bodyClass.remove('hideUp');
+          }
+          else if(st>100){
+              bodyClass.add('hideUp');
+          }
+          lastScrollY = st;
+          });
+      </script>
+    </nav>
+  </header>
+  <div id="Main">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="https://c.runoob.com/wp-content/uploads/2017/01/img_mountains_wide.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://c.runoob.com/wp-content/uploads/2017/01/img_fjords_wide.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://c.runoob.com/wp-content/uploads/2017/01/img_nature_wide.jpg">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="dotdiv">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <script>
+        var slideIndex = 1;
+        var timer = null;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          clearTimeout(timer);
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          clearTimeout(timer);
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n==undefined){n = ++slideIndex}
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          timer = setTimeout(showSlides, 5000);
+        } 
+      </script>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>研究動機及目的</h1>
+    <span>
+      松露（Tuber spp.）是一種與植物共生的子囊菌（Ascomycota）產生的地下子實體，當松露成熟時會產生強烈的香氣吸引<br>
+      動物，當動物食用之以散佈孢子來完成其生命週期。因為松露會產生強烈且令人愉快的香味，其獨特的風味、質地特徵、<br>
+      營養特性和潛在的健康益處，廣受大眾喜愛，故有「廚房中的鑽石」之美譽，與魚子醬、鵝肝醬並列號稱「世界三大珍味」。<br>
+      ．．．
+    </span>
+  </div>
+
+  <div class="content">
+    <h1>介紹</h1>
+    <span>
+      本研究針對蒐集松露特有的VOC感測器，先分別測試感測器對松露的定性反應後，將對松露有明顯反應的感測器集合起來作排列組合<br>
+      測試並對松露定性分析作最佳化後，搭配松露收穫的相關設備，組成一台松露探勘收穫的電子鼻設備。松露收穫電子鼻建置的同時開<br>
+      始建置松露氣味料庫，在電子鼻測試的過程，同時累積資料庫的內容，待電子鼻設備開發完成開始到松露田間作松露收穫探勘試驗時<br>
+      ，可以經由資料庫的資料反饋給電子鼻，讓電子鼻可以正確找到松露的所在位置，再由人輕鬆收穫松露。
+    </span>
+  </div>
+
+  <div class="content">
+    <h1>成員</h1>
+    <span>
+      吳明軒<br>
+      經歷、負責．．．．．．<br>
+      蔡承恩<br>
+      經歷、負責．．．．．．<br>
+      吳雲聖<br>
+      經歷、負責．．．．．．<br>
+    </span>
+  </div>
+
+  <div class="foo">
+    <h2>電子鼻開發</h2>
+  </div>
+
+</body>
+</html>

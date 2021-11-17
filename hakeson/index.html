@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall in 浪</title>
+    <link rel="icon" href="images/icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+  <header id="head">
+    <nav class="menu" id="menu">
+      <a id="menubtn" class="toggle-nav" href="#">☰</a>
+      <div class="menu-logo"><a href="index.html"><img src="images/icon.png" alt="" style="height: 50px;width:50px"></a></div>
+      <ul id="menuUl" class="menuactive">
+        <li><a href="index.html" style="color: #70e6ec;">首頁</a></li>
+        <li><a href="detection.php">辨識</a></li>
+      </ul>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+          document.getElementById('menubtn').addEventListener('click', function (e) {
+              $('#menuUl').toggleClass('menuactive');
+              $('#head').toggleClass('menuactive2');
+          })
+          var bodyClass = document.body.classList,
+              lastScrollY = 100;
+          window.addEventListener('scroll', function(){
+          var st = this.scrollY;
+          if( st < lastScrollY) {
+              bodyClass.remove('hideUp');
+          }
+          else if(st==100){
+              bodyClass.remove('hideUp');
+          }
+          else if(st>100){
+              bodyClass.add('hideUp');
+          }
+          lastScrollY = st;
+          });
+      </script>
+    </nav>
+  </header>
+  <div id="Main">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images\test1.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test2.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test3.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test4.jpeg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test5.jpeg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test6.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images\test7.jpg">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="dotdiv">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        var timer = null;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          clearTimeout(timer);
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          clearTimeout(timer);
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n==undefined){n = ++slideIndex}
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          timer = setTimeout(showSlides, 5000);
+        } 
+      </script>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>前言</h1>
+    <h2>
+      &emsp;&emsp;目前我國海洋面臨的挑戰有污染問題、漁業監管不當等，這些問題足以破壞海洋生態，導致生態失去平衡，甚至讓台灣周遭海域的魚種及數量改變，進而直接影響漁業。污染，是對海洋生造成威脅的來源之一，說是最大威脅似乎也不為過。人類與環境關係密切，兩者間須相互尊重，達到平衡，以維持地球永續發展。台灣四面環海，海洋與我們更是息息相關，我國對海洋的保育可說是相當重要。
+    </h2>
+  </div>
+  <hr>
+  <div class="content-choose">
+    <h1>傳統漁業與海洋觀光的衝突</h1>
+    <div class="choose1">
+      <div class="choosediv"><button onclick="show('c1')"><h1>過度捕撈</h1></button></div>
+      <div class="choosediv"><button onclick="show('c2')"><h1>沒良心的養殖漁業</h1></button></div>
+      <div class="choosediv"><button onclick="show('c3')"><h1>幽靈撈捕</h1></button></div>
+    </div>
+    <div class="choose2">
+      <div class="choosediv"><button onclick="show('c4')"><h1>垃圾</h1></button></div>
+      <div class="choosediv"><button onclick="show('c5')"><h1>酸化</h1></button></div>
+      <div class="choosediv"><button onclick="show('c6')"><h1>優養化</h1></button></div>
+    </div>
+    <div class="choose3">
+      <div class="choosediv"><button onclick="show('c7')"><h1>水銀汙染</h1></button></div>
+      <div class="choosediv"><button onclick="show('c8')"><h1>海上鑽油</h1></button></div>
+      <div class="choosediv"><button onclick="show('c9')"><h1>取鯊魚翅及捕鯨</h1></button></div>
+    </div>
+    <div class="data">
+      <div class="datatitle">
+        <h1 id="selecttitle">請點擊欲查詢的項目</h2>
+      </div>
+      <div class="datacontent">
+        <h2 id="selectcontent"></h2>
+      </div>
+      <script>
+          function show(s){
+            if(s=='c1'){
+              document.getElementById("selecttitle").innerHTML="過度捕撈";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;過度捕撈是對海洋估計全世界超過70％的魚種已經被撈光、枯竭。撈捕的速度快過魚類繁殖生長的速度，我們已嚴重危害整個海洋生態系，無論是掠食魚種或是被掠食的魚種，牠們之間的食物鏈關係已經被破壞。這樣的損傷使得其他的干擾（如污染）更容易威脅海洋生態系。為了永續海洋資源，必須有一個全面翻修的漁業政策，這就須要全世界各國通力合作才行。";
+            }
+            if(s=='c2'){
+              document.getElementById("selecttitle").innerHTML="沒良心的養殖漁業";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;野生漁獲減少，水產養殖業就更形發達。理論上養殖漁業是個好主意，但因為不當的經營管理導致許多負面的結果。養殖飼料、水產糞便、化學藥品都很容易流進開放的大海而影響海洋生態。養殖的魚也有可能在不經意間流入海洋而有嚴重影響，例如消滅原生族群、傳播疾病及破壞棲地等。不幸的是，想要克服這些問題卻很不容易，因為供應全球將近50％魚貨的養殖漁業在目前並沒有很好的管制。";
+            }
+            if(s=='c3'){
+              document.getElementById("selecttitle").innerHTML="幽靈撈捕";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;遺失或丟棄的漁具在海中繼續纏捕魚類或其他海洋生物稱之為「幽靈撈捕」，是對海洋生態極大的傷害。這種情形往往造成連鎖問題，例如小型生物被廢棄漁具纏住，大型掠食生物前來捕食，卻也一起被纏住。漂流的漁具也可能被捲進螺旋槳而損害船隻。現在有許多解決辦法被提出，例如以生物可分解的材質製造漁具，或像南韓政府收購老舊的漁具，鼓勵漁民更新（對海洋生態較友善的）魚具。";
+            }
+            if(s=='c4'){
+              document.getElementById("selecttitle").innerHTML="垃圾";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;這是明顯易見的問題。真是令人驚訝這些垃圾是如何倒進大海的。海洋生物很容易被人類的垃圾纏住或困住，美麗的珊瑚與海綿也會被摧毀。更甚者，塑膠袋會被海龜或海豚視為牠們最喜愛的食物—水母或魷魚而吞食，造成牠們窒息或阻塞消化系統。";
+            }
+            if(s=='c5'){
+              document.getElementById("selecttitle").innerHTML="酸化";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;海洋吸收了地球將近1/3的二氧化碳，讓地球可以不那麼熱但也使得海洋表面更酸。但這樣也限制了珊瑚、浮游生物及其他海洋生物，許多海洋生命將因此消逝。";
+            }
+            if(s=='c6'){
+              document.getElementById("selecttitle").innerHTML="優養化";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;車輛排放的廢氣、家庭與事業廢污水、農業化肥或有機肥等排入河口，在海灣形成大量的氮或磷，超越海水可以代謝自淨的能力。氮磷的養分讓海藻大量繁殖，許多藻類有毒，加上大量吸收水中氧氣導致其他生物缺氧而死。而死去的藻類沈到水底，在腐爛的過程中又吸光了海底的氧氣，周遭生物完全不能存活，因此稱為「死亡區」。";
+            }
+            if(s=='c7'){
+              document.getElementById("selecttitle").innerHTML="水銀汙染";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;科學報告指出海洋的水銀含量在過去20年間增加了30％，而且在往後數十年將再增加50％。燒煤的火力發電廠是罪魁禍首。水銀透過食物鏈傳遞，最後人類吃魚也吃下水銀。水銀是一種神經毒素，會使胎兒大腦發育不正常，也會在往後造成學習障礙。";
+            }
+            if(s=='c8'){
+              document.getElementById("selecttitle").innerHTML="海上鑽油";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;海上鑽油一直是個爭議，但顯然的只要石油持續開採，就會加劇對海洋的傷害。使用石化燃料會使海洋更熱而且更酸，但海上鑽油帶來的危機不只如此。當石油從海底被往上汲取時，連帶會有許多重金屬如汞、砷、鉛等都被提出來。同時偵測油源的震波也對海洋哺乳動物造成傷害或使鯨豚驚慌失措。2008年全球最大石油業者艾克森美孚公司就是使用震波科技時導致100隻鯨擱淺。而運輸油料的基礎設施會造成海岸侵蝕，則又是另一個問題了。";
+            }
+            if(s=='c9'){
+              document.getElementById("selecttitle").innerHTML="取鯊魚翅及捕鯨";
+              document.getElementById("selectcontent").innerHTML="&emsp;&emsp;摧殘海洋重要的掠食動物的結果就是破壞食物鏈。每年有5千萬至1億條各種鯊魚被殺，就是要抓牠們取魚鰭，用來煮亞洲地區昂貴卻又受歡迎的湯（魚翅湯）。鯊魚被割下鰭後，就被扔回海裡，活生生的流血殆盡而亡。";
+            }
+          }
+        </script>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+    <h1>觀光與漁業的共存方式</h1>
+    <h2>
+      &emsp;&emsp;面對漁獲枯竭，傳統漁業如何找出路？當前漁業政策，多以護魚、休漁，給予漁民獎勵、補助為主，除維護海洋資源外，也應積極輔導漁民轉型休閒漁業，將捕撈行為轉換為觀光導覽及漁業體驗，兼顧生態永續也可增加漁民收益。「讓海洋休養生息是未來趨勢。」
+    </h2>
+    
+    <table border="1">
+      <tr>
+        <td></td>
+        <td><h2>傳統漁業</h2></td>
+        <td><h2>休閒漁業</h2></td>
+      </tr>
+      <tr>
+        <td><h2>產值</h2></td>
+        <td><h2>逐年增加</h2></td>
+        <td><h2>傳統漁業的三倍</h2></td>
+      </tr>
+      <tr>
+        <td><h2>收穫方式</h2></td>
+        <td><h2>一昧追求捕獲量</h2></td>
+        <td><h2>朝向生態，觀光發展</h2></td>
+      </tr>
+      <tr>
+        <td><h2>保育概念</h2></td>
+        <td><h2>較差</h2></td>
+        <td><h2>更深植人心</h2></td>
+      </tr>
+    </table>
+
+    <h2>
+      &emsp;&emsp;以東港碼頭為例子，原本是以漁獲為主的地區，近年來因大鵬灣觀光區的興起外 加東港到小琉球之間的船隻往來，東港當地魚市場也漸漸轉型成為觀光漁市，在地也推廣了黑鮪魚季、漁業文化展示館、自行車道……等等使得當地更有特色。
+    </h2>
+  </div>
+  <hr>
+  <div class="content-choose">
+    <h1>傳統漁業與海洋觀光的衝突</h1>
+    <div class="choose1">
+      <div class="choosediv"><button onclick="show2('c1')" class="bw"><h1>消費者當減塑領頭羊</h1></button></div>
+      <div class="choosediv"><button onclick="show2('c2')" class="bw"><h1>分享氣候變遷訊息，保護海洋生物多樣性</h1></button></div>
+    </div>
+    <div class="choose2">
+      <div class="choosediv"><button onclick="show2('c3')" class="bw"><h1>尋找代替品，不要驚動生態</h1></button></div>
+      <div class="choosediv"><button onclick="show2('c4')" class="bw"><h1>日常大小事都能實踐低碳生活</h1></button></div>
+    </div>
+    <div class="data">
+      <div class="datatitle">
+        <h1 id="selecttitle2">請點擊欲查詢的項目</h2>
+      </div>
+      <div class="datacontent">
+        <h2 id="selectcontent2"></h2>
+      </div>
+      <script>
+          function show2(s){
+            if(s=='c1'){
+              document.getElementById("selecttitle2").innerHTML="消費者當減塑領頭羊";
+              document.getElementById("selectcontent2").innerHTML="&emsp;&emsp;我們的生活中有太多可以減塑的機會，以可重複使用的提袋與容器、吸管及餐具取代一次性塑膠包裝，甚至以消費者角色要求零售通路企業、市場、商圈、夜市改變銷售模式，主動向店家告知減塑的期待，推動改變。";
+            }
+            if(s=='c2'){
+              document.getElementById("selecttitle2").innerHTML="分享氣候變遷訊息，保護海洋生物多樣性";
+              document.getElementById("selectcontent2").innerHTML="&emsp;&emsp;氣候變遷與海洋生態密不可分，海洋能平衡氣候，但如果海水溫度升高、海洋吸收大氣中過多的二氧化碳，將危及海洋生態，例如近年珊瑚白化現象層出不窮，使有「海底熱帶雨林」之稱的珊瑚礁群面臨生存危機，賴以為生的物種直接受到衝擊。";
+            }
+            if(s=='c3'){
+              document.getElementById("selecttitle2").innerHTML="尋找代替品，不要驚動生態";
+              document.getElementById("selectcontent2").innerHTML="&emsp;&emsp;如果天秤彼端是海洋健康，即使有口腹需求，您是否願意尋求代替品？慎選永續環保海鮮、無翅婚宴同樣幸福美滿、磷蝦油真的不能保證您的心血管健康，您有其他的保健產品選擇！";
+            }
+            if(s=='c4'){
+              document.getElementById("selecttitle2").innerHTML="日常大小事都能實踐低碳生活";
+              document.getElementById("selectcontent2").innerHTML="&emsp;&emsp;從自身做起最容易減碳的方法，就是您每天使用的能源，包括電力、交通工具。根據環保署統計，包含飛機、汽車等交通運輸產生的碳排放占比約為全臺總量的 14%，因此租用方便、費用低廉的腳踏車，搭乘大眾運輸工具，能有效減少每天的碳排放！";
+            }
+          }
+      </script>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+    <h1>結論</h1>
+    <h2>
+      &emsp;&emsp;希望能讓民眾理解海洋生態環境的重要性，及帶領他們更了解有關漁業與觀光兩產業，進一步落實永續海洋。由下圖可以看出海洋廢棄垃圾的占比，下圖列出的垃圾還只是一小部分，只佔了0.1%，其他未列出的垃圾占比高達99.9%，可見人類維持海洋生態環境還需努力。
+    </h2>
+    <img src="images\garbage.png" alt="">
+  </div>
+  <div class="foo">
+    <h2>Fall in 浪</h2>
+  </div>
+</body>
+</html>
